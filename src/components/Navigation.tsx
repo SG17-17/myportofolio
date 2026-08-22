@@ -14,7 +14,7 @@ const navItems = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
-  { href: "#cv-resume", label: "CV/Resume" },
+  { href: "/myportofolio/cv.html", label: "CV/Resume" },
   { href: "#contact", label: "Contact" },
 ];
 
