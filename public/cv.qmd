@@ -1,6 +1,6 @@
 ---
 title: "Muhammad Niam Makhali"
-subtitle: "Researcher | Social & Environmental Psychology | Quantitative & Qualitative Research"
+subtitle: "Social & Environmental Psychology Researcher"
 format:
   html:
     theme: cosmo
@@ -14,22 +14,22 @@ author:
 ---
 
 ## Profile
-Researcher with a master's degree in psychology from Universitas Padjadjaran and experience in quantitative and qualitative social research. Skilled in survey methodology, psychometrics, statistical analysis, and evidence-based research across academic and field settings. Experienced in adapting and validating psychological instruments, designing research protocols, analysing complex datasets, and producing scientific reports to support research and policy development. Interested in sustainability, environmental behaviour, public policy, and social development.
+Researcher with a master's degree in psychology from Padjadjaran University and experience in quantitative and qualitative social research. Skilled in survey methodology, psychometrics, statistical analysis, and evidence-based research across academic and field settings. Experienced in adapting and validating psychological instruments, designing research protocols, analysing complex datasets, and producing scientific reports to support research and policy development. Interested in sustainability, environmental behaviour, public policy and social development.
 
 ## Education
 
-**Master of Science in Psychology (M.Psi.)**  
-*Universitas Padjadjaran — Bandung* \hfill **2024–2026**  
+**Master of Science in Psychology**  
+*Padjadjaran University* \hfill **2024–2026**  
 GPA: 3.51
 
-**Bachelor of Psychology (S.Psi.)**  
-*Universitas Muria Kudus — Kudus* \hfill **2019–2023**  
+**Bachelor of Psychology**  
+*Muria Kudus University* \hfill **2019–2023**  
 GPA: 3.60
 
 ## Professional Experience
 
 **Research Assistant**  
-*Faculty of Psychology, Universitas Padjadjaran* \hfill **2026–Present**
+*Faculty of Psychology, Padjadjaran University* \hfill **2024–2026**
 
 - Assisted in grant-funded research projects from research design to reporting.
 - Adapted and validated four international psychological instruments following ITC Guidelines (2017).
@@ -57,24 +57,19 @@ GPA: 3.60
 
 ## Core Competencies
 
-- **Research Method:** Survey Design, Mixed Methods Research, Psychometrics, Questionnaire Development, Instrument Adaptation (ITC 2017), Systematic Literature Review, Qualitative Interview.
+- **Research Method:** Research Design, Psychometrics, Questionnaire Development, Instrument Adaptation (ITC 2017), Systematic Literature Review, Qualitative Interview.
 - **Research Areas:** Sustainability, Environmental Behaviour, Social Psychology, Community Research.
-- **Software:** RStudio, JASP, Jamovi, Microsoft Office, Zotero, Mendeley.
+- **Software:** R Studio, Positron, Antigravity, Microsoft Office.
 
 ## Certifications
 
 - BNSP Professional Certification – Human Resources Staff
 - Nature Conservation Cadre Certification – Meru Betiri National Park
 
-## Languages
-
-- **Indonesian** — Native
-- **English** — Professional Working Proficiency
-
 ## Publications
 
 - **Makhali, M. N.** The Boundary Conditions of Climate Change Skepticism: How Student Engagement Moderates the Link to Environmental Activism Behavior. *[Manuscript in preparation for the Journal of Environmental Psychology]*
-- **Makhali, M. N.** (in press). The Influence of Environmental Cynicism on Pro-Environmental Behavior Among University Students in Indonesia.
-- **Makhali, M. N.** (2026) Adaptation and Validation of the Indonesian Version of the Environmental Cynicism Scale.
-- **Makhali, M. N.**, & Widjanarko, M. (2023). Pro-environmental Behavior among Coffee Farmers in Muria Mountains Area. *Jurnal Ecopsy*, 10(1), 1–11.
+- **Makhali, M. N.**, Mutmainnah, M., Tanjung., Jatnika, R., & Muliadi, R. Adaptation and Validation of the Indonesian Version of the Environmental Cynicism Scale. *Jurnal Ecopsy*, 13(1), 27-40.
+- **Makhali, M. N.**, Ninin, R. H., Abidin, Z., & Damanik, R. M. (2026). Menguji Ulang Peran Sinisme Lingkungan Terhadap Perilaku pro-Lingkungan Pada Mahasiswa di Indonesia. *Jurnal Psikologi Perseptual*, 11(1), 91-103.
+- **Makhali, M. N.**, & Widjanarko, M. (2023). Pro-environmental Behavior among Coffee Farmers in Muria Mountains Area. *Jurnal Ecopsy*, 10(1), 1-11.
 - Prastyo, E. B., Khasan, M., & **Makhali, M. N.** (2022). Disaster Mitigation Based on Local Wisdom of the Rahtawu Village Community. *Prosiding Temilnas IPS 2021*, 204–227.
