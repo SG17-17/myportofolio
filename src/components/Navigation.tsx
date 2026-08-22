@@ -23,14 +23,21 @@ export function Navigation() {
     <div className="fixed top-0 w-full bg-background backdrop-blur-md z-50 border-b border-border/40 px-4">
       <div className="container flex h-16 max-w-screen-xl items-center justify-between mx-auto py-4">
         <a href={import.meta.env.BASE_URL} className="flex items-center space-x-2">
-          <img 
-            src={`${import.meta.env.BASE_URL}/favicon.svg`.replace('//', '/')} 
-            alt="Logo" 
-            className="h-8 w-auto" 
-            width={32} 
-            height={32} 
-            loading="eager" 
-          />
+          {/* Instagram-style story ring */}
+          <div className="rounded-full p-[2px] bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500">
+            <img 
+              src={`${import.meta.env.BASE_URL}/profile.jpg`.replace('//', '/')} 
+              alt="Profile" 
+              className="h-8 w-8 rounded-full border-2 border-background object-cover" 
+              width={32} 
+              height={32} 
+              loading="eager" 
+              onError={(e) => {
+                // Fallback to a placeholder if the user hasn't uploaded profile.jpg yet
+                e.currentTarget.src = `https://ui-avatars.com/api/?name=Niam+Makhali&background=0D8ABC&color=fff&rounded=true`;
+              }}
+            />
+          </div>
         </a>
 
         {/* Desktop Navigation */}
