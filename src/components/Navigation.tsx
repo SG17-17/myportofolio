@@ -24,7 +24,7 @@ export function Navigation() {
       <div className="container flex h-16 max-w-screen-xl items-center justify-between mx-auto py-4">
         <a href={import.meta.env.BASE_URL} className="flex items-center space-x-2">
           <img 
-            src={`${import.meta.env.BASE_URL}favicon.svg`} 
+            src={`${import.meta.env.BASE_URL}/favicon.svg`.replace('//', '/')} 
             alt="Logo" 
             className="h-8 w-auto" 
             width={32} 
