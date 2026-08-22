@@ -1,41 +1,60 @@
 [
   {
-    "title": "Social & Environmental Psychology",
-    "slug": "social-env-psych",
-    "description": ["Fokus utama pada aspek psikologis yang mendasari perilaku ramah lingkungan, persepsi risiko perubahan iklim, dan dinamika sosial dalam komunitas yang menghadapi tantangan lingkungan. Bertujuan untuk memahami interaksi kompleks antara manusia dan alam demi mendorong keberlanjutan."],
-    "longDescription": ["Fokus utama pada aspek psikologis yang mendasari perilaku ramah lingkungan, persepsi risiko perubahan iklim, dan dinamika sosial dalam komunitas yang menghadapi tantangan lingkungan. Bertujuan untuk memahami interaksi kompleks antara manusia dan alam demi mendorong keberlanjutan."],
-    "date": "2024",
-    "tags": ["Pro-environmental behavior", "Climate change psychology", "Social dynamics"],
-    "links": [],
-    "featured": true,
-    "role": "Researcher",
-    "organization": "Universitas Padjadjaran",
-    "highlights": []
+    "title": "Climate Change Skepticism & Pro-Environmental Behavior",
+    "description": [
+      "**Master's Thesis (M.Psi.)**",
+      "Investigated the moderating role of student engagement in environmental organizations on the link between climate change skepticism and pro-environmental behavior.",
+      "**Methods:** Confirmatory Factor Analysis (CFA) & Linear Regression.",
+      "**Tools:** Jamovi, R Studio."
+    ],
+    "link": "https://niammakhali-sg.github.io/mythesis/",
+    "github": "",
+    "photo": ""
   },
   {
-    "title": "Survey Methodology & Psychometrics",
-    "slug": "survey-psychometrics",
-    "description": ["Berpengalaman dalam mengadaptasi, memvalidasi, dan merancang instrumen pengukuran psikologis. Pendekatan berbasis bukti ilmiah untuk memastikan bahwa alat ukur yang digunakan dalam penelitian sosial maupun terapan memiliki reliabilitas dan validitas yang tinggi."],
-    "longDescription": ["Berpengalaman dalam mengadaptasi, memvalidasi, dan merancang instrumen pengukuran psikologis. Pendekatan berbasis bukti ilmiah untuk memastikan bahwa alat ukur yang digunakan dalam penelitian sosial maupun terapan memiliki reliabilitas dan validitas yang tinggi."],
-    "date": "2023",
-    "tags": ["Scale development", "Cross-cultural adaptation", "Psychometric evaluation"],
-    "links": [],
-    "featured": true,
-    "role": "Researcher",
-    "organization": "Universitas Padjadjaran",
-    "highlights": []
+    "title": "Worker & Household Enterprise Survey (WHES)",
+    "description": [
+      "**Field Research Assistant — SurveyMETER (2023)**",
+      "Conducted large-scale field surveys across multicultural communities in Southwest Papua to capture the condition of informal workers and household enterprises.",
+      "**Responsibilities:** In-depth interviews, daily quality control, and field observations."
+    ],
+    "link": "",
+    "github": "",
+    "photo": ""
   },
   {
-    "title": "Statistical & Evidence-based Analysis",
-    "slug": "statistical-analysis",
-    "description": ["Menggunakan R dan SPSS untuk menganalisis data survei berskala besar maupun data eksperimen. Dari uji reliabilitas instrumen hingga analisis model kompleks untuk menyusun laporan ilmiah yang komprehensif bagi riset maupun rekomendasi kebijakan."],
-    "longDescription": ["Menggunakan R dan SPSS untuk menganalisis data survei berskala besar maupun data eksperimen. Dari uji reliabilitas instrumen hingga analisis model kompleks untuk menyusun laporan ilmiah yang komprehensif bagi riset maupun rekomendasi kebijakan."],
-    "date": "2023",
-    "tags": ["Quantitative analysis", "Statistical modeling", "Evidence-based reporting"],
-    "links": [],
-    "featured": true,
-    "role": "Data Analyst",
-    "organization": "Independent",
-    "highlights": []
+    "title": "Strategic Leadership & Research Management",
+    "description": [
+      "**Executive Coordinator — MRC Indonesia (2020–2023)**",
+      "Directed strategic and operational initiatives for multidisciplinary research programs focusing on social, environmental, cultural, and disaster contexts in the Muria Mountains.",
+      "**Highlights:** Led organizational transformation towards evidence-based research and established sustainable stakeholder collaborations."
+    ],
+    "link": "",
+    "github": "",
+    "photo": ""
+  },
+  {
+    "title": "Competency-Based HRM System Design",
+    "description": [
+      "**Lead Researcher / HRM Consultant (2024)**",
+      "Audited and redesigned a comprehensive competency-based HRM system for Barista positions to align specialty quality strategies with retail efficiency.",
+      "**Methods:** Job Analysis, BEI STAR, BARS, KPI, and ADDIE Model for training curriculums."
+    ],
+    "link": "",
+    "github": "",
+    "photo": ""
+  },
+  {
+    "title": "Scientific Publications",
+    "description": [
+      "Collection of published and submitted academic research.",
+      "• **Makhali, M. N.** The Boundary Conditions of Climate Change Skepticism... *(Manuscript in preparation)*",
+      "• **Makhali, M. N.**, et al. Adaptation and Validation of the Indonesian Version of the Environmental Cynicism Scale. *(Jurnal Ecopsy, 13(1))*",
+      "• **Makhali, M. N.**, et al. (2026). Menguji Ulang Peran Sinisme Lingkungan... *(Jurnal Psikologi Perseptual, 11(1))*",
+      "• **Makhali, M. N.**, & Widjanarko, M. (2023). Pro-environmental Behavior among Coffee Farmers... *(Jurnal Ecopsy, 10(1))*"
+    ],
+    "link": "",
+    "github": "",
+    "photo": ""
   }
 ]
