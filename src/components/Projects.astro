@@ -14,7 +14,7 @@ const hasMoreProjects = PROJECTS.length > INITIAL_PROJECT_COUNT;
 ---
 
 <Section id="projects" class="py-24" containerClass="max-w-6xl">
-  <SectionTitle>Riset & Publikasi</SectionTitle>
+  <SectionTitle>Projects</SectionTitle>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     {PROJECTS.map((project, index) => (
       <div class={`project-wrapper h-full ${index >= INITIAL_PROJECT_COUNT ? 'hidden-project' : ''}`}>
@@ -28,7 +28,7 @@ const hasMoreProjects = PROJECTS.length > INITIAL_PROJECT_COUNT;
         id="show-more-projects"
         class="show-more-btn btn-stipple-light"
       >
-        Lihat Lebih Banyak
+        Show More Projects
       </button>
     </div>
   )}
@@ -45,7 +45,7 @@ const hasMoreProjects = PROJECTS.length > INITIAL_PROJECT_COUNT;
       hiddenProjects.forEach(project => {
         project.classList.toggle('show');
       });
-      showMoreButton.textContent = isExpanded ? 'Lebih Sedikit' : 'Lihat Lebih Banyak';
+      showMoreButton.textContent = isExpanded ? 'Show Fewer Projects' : 'Show More Projects';
     });
   }
 </script>
