@@ -1,0 +1,80 @@
+---
+title: "Muhammad Niam Makhali"
+subtitle: "Researcher | Social & Environmental Psychology | Quantitative & Qualitative Research"
+format:
+  html:
+    theme: cosmo
+    toc: false
+    minimal: true
+    css: styles.css
+author:
+  - name: Jatinangor, West Java
+  - name: "0818-1817-0100"
+  - name: niammakhalii@gmail.com
+---
+
+## Profile
+Researcher with a master's degree in psychology from Universitas Padjadjaran and experience in quantitative and qualitative social research. Skilled in survey methodology, psychometrics, statistical analysis, and evidence-based research across academic and field settings. Experienced in adapting and validating psychological instruments, designing research protocols, analysing complex datasets, and producing scientific reports to support research and policy development. Interested in sustainability, environmental behaviour, public policy, and social development.
+
+## Education
+
+**Master of Science in Psychology (M.Psi.)**  
+*Universitas Padjadjaran — Bandung* \hfill **2024–2026**  
+GPA: 3.51
+
+**Bachelor of Psychology (S.Psi.)**  
+*Universitas Muria Kudus — Kudus* \hfill **2019–2023**  
+GPA: 3.60
+
+## Professional Experience
+
+**Research Assistant**  
+*Faculty of Psychology, Universitas Padjadjaran* \hfill **2026–Present**
+
+- Assisted in grant-funded research projects from research design to reporting.
+- Adapted and validated four international psychological instruments following ITC Guidelines (2017).
+- Designed survey procedures and supported ethical clearance preparation.
+- Conducted statistical analyses using R and structural equation modelling techniques.
+- Coordinated research activities, participant recruitment, and field data collection.
+- Prepared research reports, technical documentation, and scientific manuscripts.
+
+**Executive Coordinator**  
+*Muria Research Center* \hfill **2020–2023**
+
+- Coordinated research planning, scheduling, and implementation across multiple community-based research projects.
+- Supervised field researchers throughout data collection activities.
+- Developed research protocols and field instruments.
+- Analysed research findings and prepared technical reports and scientific publications.
+- Facilitated communication among research team members and external stakeholders.
+
+**Field Research Assistant**  
+*SurveyMETER* \hfill **2023**
+
+- Conducted large-scale field surveys across culturally diverse communities in Southwest Papua.
+- Collected quantitative and qualitative data through structured interviews and field observations.
+- Maintained data quality through verification and consistency checking.
+- Collaborated with multidisciplinary research teams during field implementation.
+
+## Core Competencies
+
+- **Research Method:** Survey Design, Mixed Methods Research, Psychometrics, Questionnaire Development, Instrument Adaptation (ITC 2017), Systematic Literature Review, Qualitative Interview.
+- **Research Areas:** Sustainability, Environmental Behaviour, Social Psychology, Community Research.
+- **Software:** RStudio, JASP, Jamovi, Microsoft Office, Zotero, Mendeley.
+
+## Certifications
+
+- BNSP Professional Certification – Human Resources Staff
+- Nature Conservation Cadre Certification – Meru Betiri National Park
+
+## Languages
+
+- **Indonesian** — Native
+- **English** — Professional Working Proficiency
+
+## Publications
+
+- **Makhali, M. N.** The Boundary Conditions of Climate Change Skepticism: How Student Engagement Moderates the Link to Environmental Activism Behavior. *[Manuscript in preparation for the Journal of Environmental Psychology]*
+- **Makhali, M. N.** (in press). The Influence of Environmental Cynicism on Pro-Environmental Behavior Among University Students in Indonesia.
+- **Makhali, M. N.** (2026) Adaptation and Validation of the Indonesian Version of the Environmental Cynicism Scale.
+- **Makhali, M. N.**, & Widjanarko, M. (2023). Pro-environmental Behavior among Coffee Farmers in Muria Mountains Area. *Jurnal Ecopsy*, 10(1), 1–11.
+- Prastyo, E. B., Khasan, M., & **Makhali, M. N.** (2022). Disaster Mitigation Based on Local Wisdom of the Rahtawu Village Community. *Prosiding Temilnas IPS 2021*, 204–227.
