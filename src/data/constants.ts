@@ -8,8 +8,8 @@ export const SITE_CONFIG = {
 
 
 export const SKILLS = [
-  'Quantitative Research', 'Qualitative Research',
-  'Survey Methodology', 'Psychometrics',
-  'Statistical Modeling', 'Evidence-based Reporting',
-  'SPSS', 'R', 'Quarto'
+  'Research Design', 'Psychometrics', 'Questionnaire Development', 
+  'Instrument Adaptation', 'Systematic Literature Review', 'Qualitative Interview',
+  'Sustainability', 'Environmental Behaviour', 'Social Psychology', 'Community Research',
+  'R Studio', 'Positron', 'Antigravity', 'Microsoft Office'
 ];
