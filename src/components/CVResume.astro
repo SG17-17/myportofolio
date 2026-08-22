@@ -2,8 +2,7 @@
 /**
  * CV/Resume Section Component
  * 
- * Clean links to CV and Resume documents.
- * Stippled gradient matches the hero aesthetic.
+ * Clean layout for Curriculum Vitae, integrating the stippled aesthetic.
  */
 import Section from './Section.astro';
 import SectionTitle from './SectionTitle.astro';
@@ -11,44 +10,245 @@ import StippledPattern from './ui/StippledPattern.astro';
 ---
 
 <Section id="cv-resume">
-  <SectionTitle>The boring stuff</SectionTitle>
+  <SectionTitle>Curriculum Vitae</SectionTitle>
   
-  <div class="grid gap-6 md:grid-cols-2">
-    <div class="doc-card">
-      <!-- Stippled gradient - matches hero style -->
-      <div class="stippled-gradient" aria-hidden="true">
-        <StippledPattern density={0.55} dotSize={2.2} width="100%" height="100%" />
-      </div>
-      <h3 class="doc-title">Lampiran Tesis</h3>
-      <p class="doc-description">
-        Lampiran komprehensif mengenai hasil penelitian dan metodologi tesis saya.
-      </p>
-      <div class="doc-links">
-        <a href="https://niammakhali-sg.github.io/mythesis/" target="_blank" class="doc-link btn-stipple-dark">
-          Lihat Tesis →
-        </a>
+  <div class="cv-container mt-8">
+    
+    <!-- Profile Header -->
+    <div class="cv-header mb-12 pb-6 border-b-2 border-foreground relative">
+      <h2 class="text-3xl md:text-4xl font-bold font-serif text-foreground mb-3">MUHAMMAD NIAM MAKHALI</h2>
+      <p class="text-lg md:text-xl font-medium text-foreground mb-4">Researcher | Social & Environmental Psychology | Quantitative & Qualitative Research | Survey Methodology</p>
+      <div class="flex flex-wrap gap-4 text-sm font-mono text-muted-foreground">
+        <span class="flex items-center gap-1">📍 Jatinangor, West Java</span>
+        <span class="flex items-center gap-1">📞 0818-1817-0100</span>
+        <span class="flex items-center gap-1">✉️ niammakhalii@gmail.com</span>
       </div>
     </div>
-    
-    <div class="doc-card">
-      <!-- Stippled gradient - matches hero style -->
-      <div class="stippled-gradient" aria-hidden="true">
-        <StippledPattern density={0.55} dotSize={2.2} width="100%" height="100%" />
+
+    <div class="space-y-12">
+      
+      <!-- Profile -->
+      <div>
+        <h3 class="cv-section-title">PROFILE</h3>
+        <p class="cv-text">
+          Researcher with a master’s degree in psychology from Universitas Padjadjaran and experience in quantitative and qualitative social research. Skilled in survey methodology, psychometrics, statistical analysis, and evidence-based research across academic and field settings. Experienced in adapting and validating psychological instruments, designing research protocols, analysing complex datasets, and producing scientific reports to support research and policy development. Interested in sustainability, environmental behaviour, public policy, and social development.
+        </p>
       </div>
-      <h3 class="doc-title">Resume Singkat</h3>
-      <p class="doc-description">
-        Rangkuman satu halaman mengenai karier akademik dan pengalaman lapangan saya.
-      </p>
-      <div class="doc-links">
-        <a href="#" class="doc-link btn-stipple-dark">
-          (Segera Hadir)
-        </a>
+
+      <!-- Education -->
+      <div>
+        <h3 class="cv-section-title">EDUCATION</h3>
+        <div class="grid gap-4 md:grid-cols-2">
+          <div class="doc-card">
+            <div class="stippled-gradient" aria-hidden="true">
+              <StippledPattern density={0.4} dotSize={1.8} width="100%" height="100%" />
+            </div>
+            <div class="relative z-10 flex flex-col h-full">
+              <span class="font-mono text-xs border-2 border-foreground px-2 py-1 w-fit mb-3">2024–2026</span>
+              <h4 class="font-bold text-lg text-foreground mb-1">Master of Science in Psychology (M.Psi.)</h4>
+              <p class="text-foreground font-medium mb-1">Universitas Padjadjaran — Bandung</p>
+              <p class="text-muted-foreground text-sm mt-auto">GPA: 3.51</p>
+            </div>
+          </div>
+          
+          <div class="doc-card">
+            <div class="stippled-gradient" aria-hidden="true">
+              <StippledPattern density={0.4} dotSize={1.8} width="100%" height="100%" />
+            </div>
+            <div class="relative z-10 flex flex-col h-full">
+              <span class="font-mono text-xs border-2 border-foreground px-2 py-1 w-fit mb-3">2019–2023</span>
+              <h4 class="font-bold text-lg text-foreground mb-1">Bachelor of Psychology (S.Psi.)</h4>
+              <p class="text-foreground font-medium mb-1">Universitas Muria Kudus — Kudus</p>
+              <p class="text-muted-foreground text-sm mt-auto">GPA: 3.60</p>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- Professional Experience -->
+      <div>
+        <h3 class="cv-section-title">PROFESSIONAL EXPERIENCE</h3>
+        <div class="space-y-6">
+          
+          <div class="experience-item">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 gap-2">
+              <div>
+                <h4 class="font-bold text-lg text-foreground">Research Assistant</h4>
+                <p class="text-foreground font-medium">Faculty of Psychology, Universitas Padjadjaran</p>
+              </div>
+              <span class="font-mono text-xs border-2 border-foreground px-2 py-1 whitespace-nowrap bg-background">2026–Present</span>
+            </div>
+            <ul class="cv-list">
+              <li>Assisted in grant-funded research projects from research design to reporting.</li>
+              <li>Adapted and validated four international psychological instruments following ITC Guidelines (2017).</li>
+              <li>Designed survey procedures and supported ethical clearance preparation.</li>
+              <li>Conducted statistical analyses using R and structural equation modelling techniques.</li>
+              <li>Coordinated research activities, participant recruitment, and field data collection.</li>
+              <li>Prepared research reports, technical documentation, and scientific manuscripts.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 gap-2">
+              <div>
+                <h4 class="font-bold text-lg text-foreground">Executive Coordinator</h4>
+                <p class="text-foreground font-medium">Muria Research Center</p>
+              </div>
+              <span class="font-mono text-xs border-2 border-foreground px-2 py-1 whitespace-nowrap bg-background">2020–2023</span>
+            </div>
+            <ul class="cv-list">
+              <li>Coordinated research planning, scheduling, and implementation across multiple community-based research projects.</li>
+              <li>Supervised field researchers throughout data collection activities.</li>
+              <li>Developed research protocols and field instruments.</li>
+              <li>Analysed research findings and prepared technical reports and scientific publications.</li>
+              <li>Facilitated communication among research team members and external stakeholders.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 gap-2">
+              <div>
+                <h4 class="font-bold text-lg text-foreground">Field Research Assistant</h4>
+                <p class="text-foreground font-medium">SurveyMETER</p>
+              </div>
+              <span class="font-mono text-xs border-2 border-foreground px-2 py-1 whitespace-nowrap bg-background">2023</span>
+            </div>
+            <ul class="cv-list">
+              <li>Conducted large-scale field surveys across culturally diverse communities in Southwest Papua.</li>
+              <li>Collected quantitative and qualitative data through structured interviews and field observations.</li>
+              <li>Maintained data quality through verification and consistency checking.</li>
+              <li>Collaborated with multidisciplinary research teams during field implementation.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Core Competencies -->
+        <div>
+          <h3 class="cv-section-title">CORE COMPETENCIES</h3>
+          <ul class="cv-list">
+            <li><strong>Research Method:</strong> Survey Design, Mixed Methods Research, Psychometrics, Questionnaire Development, Instrument Adaptation (ITC 2017), Systematic Literature Review, Qualitative Interview.</li>
+            <li><strong>Research Areas:</strong> Sustainability, Environmental Behaviour, Social Psychology, Community Research.</li>
+            <li><strong>Software:</strong> RStudio, JASP, Jamovi, Microsoft Office, Zotero, Mendeley.</li>
+          </ul>
+        </div>
+        
+        <div>
+          <!-- Certifications -->
+          <div class="mb-8">
+            <h3 class="cv-section-title">CERTIFICATIONS</h3>
+            <ul class="cv-list">
+              <li>BNSP Professional Certification – Human Resources Staff</li>
+              <li>Nature Conservation Cadre Certification – Meru Betiri National Park</li>
+            </ul>
+          </div>
+
+          <!-- Languages -->
+          <div>
+            <h3 class="cv-section-title">LANGUAGES</h3>
+            <ul class="cv-list">
+              <li><strong>Indonesian</strong> — Native</li>
+              <li><strong>English</strong> — Professional Working Proficiency</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publications -->
+      <div>
+        <h3 class="cv-section-title">PUBLICATIONS</h3>
+        <ul class="cv-list publication-list space-y-3">
+          <li><strong>Makhali, M. N.</strong> The Boundary Conditions of Climate Change Skepticism: How Student Engagement Moderates the Link to Environmental Activism Behavior. <em>[Manuscript in preparation for the Journal of Environmental Psychology]</em></li>
+          <li><strong>Makhali, M. N.</strong> (in press). The Influence of Environmental Cynicism on Pro-Environmental Behavior Among University Students in Indonesia.</li>
+          <li><strong>Makhali, M. N.</strong> (2026) Adaptation and Validation of the Indonesian Version of the Environmental Cynicism Scale.</li>
+          <li><strong>Makhali, M. N.</strong>, & Widjanarko, M. (2023). Pro-environmental Behavior among Coffee Farmers in Muria Mountains Area. <em>Jurnal Ecopsy</em>, 10(1), 1–11.</li>
+          <li>Prastyo, E. B., Khasan, M., & <strong>Makhali, M. N.</strong> (2022). Disaster Mitigation Based on Local Wisdom of the Rahtawu Village Community. <em>Prosiding Temilnas IPS 2021</em>, 204–227.</li>
+        </ul>
+      </div>
+
     </div>
   </div>
 </Section>
 
 <style>
+  .cv-section-title {
+    font-family: 'Bitter', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cv-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--foreground);
+    background-image: repeating-linear-gradient(to right, var(--foreground) 0, var(--foreground) 4px, transparent 4px, transparent 8px);
+  }
+
+  .cv-text {
+    font-size: 0.95rem;
+    color: var(--foreground);
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .cv-list {
+    list-style-type: square;
+    padding-left: 1.25rem;
+    color: var(--muted-foreground);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .cv-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .cv-list li strong {
+    color: var(--foreground);
+  }
+
+  .publication-list li {
+    padding-left: 1rem;
+    text-indent: -1rem;
+    list-style-type: none;
+    position: relative;
+  }
+  
+  .publication-list li::before {
+    content: '→';
+    position: absolute;
+    left: -0.5rem;
+    color: var(--foreground);
+    font-family: monospace;
+  }
+
+  .experience-item {
+    padding-left: 1rem;
+    border-left: 2px solid var(--foreground);
+    position: relative;
+  }
+  
+  .experience-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--background);
+    border: 2px solid var(--foreground);
+  }
+
   .doc-card {
     position: relative;
     padding: 1.5rem;
@@ -64,58 +264,17 @@ import StippledPattern from './ui/StippledPattern.astro';
     width: 70%;
     height: 70%;
     pointer-events: none;
-    /* Radial gradient mask - matches hero style */
     mask-image: radial-gradient(
       ellipse 100% 100% at 100% 0%,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.3) 30%,
-      rgba(0, 0, 0, 0.1) 60%,
-      rgba(0, 0, 0, 0) 85%
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0) 80%
     );
     -webkit-mask-image: radial-gradient(
       ellipse 100% 100% at 100% 0%,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.3) 30%,
-      rgba(0, 0, 0, 0.1) 60%,
-      rgba(0, 0, 0, 0) 85%
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0) 80%
     );
-  }
-
-  .doc-title {
-    font-family: 'Bitter', Georgia, serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--foreground);
-    margin-bottom: 0.5rem;
-    position: relative;
-  }
-
-  .doc-description {
-    font-size: 0.875rem;
-    color: var(--muted-foreground);
-    margin-bottom: 1rem;
-    line-height: 1.5;
-    position: relative;
-  }
-
-  .doc-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    position: relative;
-  }
-
-  .doc-link {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.5rem 0.75rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: var(--foreground);
-    border: 1.5px solid var(--foreground);
-    text-decoration: none;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
   }
 </style>
