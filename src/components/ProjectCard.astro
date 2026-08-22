@@ -1,0 +1,195 @@
+---
+/**
+ * ProjectCard Component
+ * 
+ * Print-inspired project card with sharp edges and defined borders.
+ * Matches the overall aesthetic.
+ */
+import type { Project } from '../data/projects';
+import { Icon } from 'astro-icon/components';
+import { marked } from 'marked';
+import { Image } from 'astro:assets';
+import StippledPattern from './ui/StippledPattern.astro';
+
+type Props = Project;
+
+const { title, link, photo, github, description } = Astro.props;
+const parsedDescription = description.map(desc => marked.parse(desc));
+---
+
+<article class="project-card">
+  <!-- Stippled shadow layer - revealed on hover -->
+  <div class="stippled-shadow" aria-hidden="true">
+    <StippledPattern density={0.7} dotSize={2.2} width="100%" height="100%" />
+  </div>
+  
+  <!-- Main card content -->
+  <div class="card-inner">
+    {photo ? (
+      <div class="card-image">
+        {typeof photo === 'string' ? (
+          <Image 
+            src={photo} 
+            alt={title} 
+            width={600} 
+            height={300} 
+            class="image" 
+            quality={80} 
+          />
+        ) : (
+          <Image 
+            src={photo} 
+            alt={title} 
+            width={600} 
+            height={300} 
+            class="image" 
+            quality={80} 
+          />
+        )}
+      </div>
+    ) : (
+      <!-- Stippled placeholder for cards without photos -->
+      <div class="card-placeholder">
+        <StippledPattern density={0.5} dotSize={2.5} width="100%" height="100%" />
+      </div>
+    )}
+    
+    <div class="card-content">
+      <h3 class="card-title">{title}</h3>
+      <div class="card-description">
+        {parsedDescription.map((html) => <p set:html={html} />)}
+      </div>
+    </div>
+    
+    {(link || github) && (
+      <div class="card-footer">
+        {link && (
+          <a href={link} target="_blank" rel="noopener noreferrer" class="card-link btn-stipple-dark">
+            <Icon name="ri:external-link-line" size={16} />
+            <span>View</span>
+          </a>
+        )}
+        {github && (
+          <a href={github} target="_blank" rel="noopener noreferrer" class="card-link btn-stipple-dark">
+            <Icon name="ri:github-fill" size={16} />
+            <span>Code</span>
+          </a>
+        )}
+      </div>
+    )}
+  </div>
+</article>
+
+<style>
+  .project-card {
+    position: relative;
+    height: 100%;
+  }
+
+  .stippled-shadow {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: -8px;
+    bottom: -8px;
+    opacity: 0;
+    z-index: 0;
+  }
+
+  .card-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--card);
+    border: 2px solid var(--foreground);
+    position: relative;
+    z-index: 1;
+  }
+
+  .card-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-bottom: 2px solid var(--foreground);
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    border-bottom: 2px solid var(--foreground);
+    opacity: 0.25;
+  }
+
+  .card-content {
+    flex: 1;
+    padding: 1.25rem;
+  }
+
+  .card-title {
+    font-family: 'Bitter', Georgia, serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+  }
+
+  .card-description {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--muted-foreground);
+  }
+
+  .card-description :global(p) {
+    margin-bottom: 0.5rem;
+  }
+
+  .card-description :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .card-description :global(a) {
+    color: var(--foreground);
+    text-decoration: underline;
+  }
+
+  .card-footer {
+    display: flex;
+    gap: 0;
+    border-top: 2px solid var(--foreground);
+    margin-top: auto;
+  }
+
+  .card-link {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--foreground);
+    text-decoration: none;
+    background: transparent;
+    transition: color 0.15s ease;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .card-link:hover {
+    color: var(--foreground);
+  }
+
+  .card-link:not(:last-child) {
+    border-right: 2px solid var(--foreground);
+  }
+</style>

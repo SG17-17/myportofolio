@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Social & Environmental Psychology",
+    "slug": "social-env-psych",
+    "description": ["Fokus utama pada aspek psikologis yang mendasari perilaku ramah lingkungan, persepsi risiko perubahan iklim, dan dinamika sosial dalam komunitas yang menghadapi tantangan lingkungan. Bertujuan untuk memahami interaksi kompleks antara manusia dan alam demi mendorong keberlanjutan."],
+    "longDescription": ["Fokus utama pada aspek psikologis yang mendasari perilaku ramah lingkungan, persepsi risiko perubahan iklim, dan dinamika sosial dalam komunitas yang menghadapi tantangan lingkungan. Bertujuan untuk memahami interaksi kompleks antara manusia dan alam demi mendorong keberlanjutan."],
+    "date": "2024",
+    "tags": ["Pro-environmental behavior", "Climate change psychology", "Social dynamics"],
+    "links": [],
+    "featured": true,
+    "role": "Researcher",
+    "organization": "Universitas Padjadjaran",
+    "highlights": []
+  },
+  {
+    "title": "Survey Methodology & Psychometrics",
+    "slug": "survey-psychometrics",
+    "description": ["Berpengalaman dalam mengadaptasi, memvalidasi, dan merancang instrumen pengukuran psikologis. Pendekatan berbasis bukti ilmiah untuk memastikan bahwa alat ukur yang digunakan dalam penelitian sosial maupun terapan memiliki reliabilitas dan validitas yang tinggi."],
+    "longDescription": ["Berpengalaman dalam mengadaptasi, memvalidasi, dan merancang instrumen pengukuran psikologis. Pendekatan berbasis bukti ilmiah untuk memastikan bahwa alat ukur yang digunakan dalam penelitian sosial maupun terapan memiliki reliabilitas dan validitas yang tinggi."],
+    "date": "2023",
+    "tags": ["Scale development", "Cross-cultural adaptation", "Psychometric evaluation"],
+    "links": [],
+    "featured": true,
+    "role": "Researcher",
+    "organization": "Universitas Padjadjaran",
+    "highlights": []
+  },
+  {
+    "title": "Statistical & Evidence-based Analysis",
+    "slug": "statistical-analysis",
+    "description": ["Menggunakan R dan SPSS untuk menganalisis data survei berskala besar maupun data eksperimen. Dari uji reliabilitas instrumen hingga analisis model kompleks untuk menyusun laporan ilmiah yang komprehensif bagi riset maupun rekomendasi kebijakan."],
+    "longDescription": ["Menggunakan R dan SPSS untuk menganalisis data survei berskala besar maupun data eksperimen. Dari uji reliabilitas instrumen hingga analisis model kompleks untuk menyusun laporan ilmiah yang komprehensif bagi riset maupun rekomendasi kebijakan."],
+    "date": "2023",
+    "tags": ["Quantitative analysis", "Statistical modeling", "Evidence-based reporting"],
+    "links": [],
+    "featured": true,
+    "role": "Data Analyst",
+    "organization": "Independent",
+    "highlights": []
+  }
+]
