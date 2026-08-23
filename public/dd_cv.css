@@ -38,24 +38,6 @@ h3 {
   color: var(--header-text-color);
 }
 
-/* Entry titles in main content: serif but compact */
-[data-id="main"] h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-top: 0.4rem;
-  margin-bottom: 0;
-}
-
-/* Research experience entries use h4 (bypass pagedown JS restructuring) */
-[data-id="main"] h4 {
-  font-family: var(--header-text-family);
-  font-size: 0.95rem;
-  font-weight: 600;
-  margin-top: 0.6rem;
-  margin-bottom: 0.1rem;
-  color: var(--header-text-color);
-}
-
 /* Section h2 headers: spaced caps */
 [data-id="main"] h2 {
   letter-spacing: 0.04em;

@@ -165,23 +165,6 @@ N/A
 
 {description_bullets}
 \n\n\n"
-  } else if (section_id == "research_experience") {
-    # Layout matching Professional Experience exactly
-    # N/A skips .place, loc goes to right (.location), timeline to left (.date)
-    # institution (project title) sits normally below as plain text.
-    glue_template <- "
-### {title}
-
-N/A
-
-{loc}
-
-{timeline}
-
-{institution}
-
-{description_bullets}
-\n\n\n"
   } else if (glue_template == "default") {
     glue_template <- "
 ### {title}
