@@ -155,15 +155,12 @@ print_section <- function(cv, section_id, glue_template = "default") {
   if (section_id == "publications") {
     glue_template <- "{description_bullets}\n\n"
   } else if (section_id == "research_experience") {
-    # For research: project title (institution) as heading, role and location as subtitle
+    # Use h4 so pagedown JS doesn't restructure the DOM.
+    # Project title as heading, role | location | year as clean subtitle.
     glue_template <- "
-### {institution}
+#### {institution}
 
-{title}
-
-{loc}
-
-{timeline}
+**{title}** | {loc} | *{timeline}*
 
 {description_bullets}
 \n\n\n"

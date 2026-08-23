@@ -46,6 +46,16 @@ h3 {
   margin-bottom: 0;
 }
 
+/* Research experience entries use h4 (bypass pagedown JS restructuring) */
+[data-id="main"] h4 {
+  font-family: var(--header-text-family);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 0.6rem;
+  margin-bottom: 0.1rem;
+  color: var(--header-text-color);
+}
+
 /* Section h2 headers: spaced caps */
 [data-id="main"] h2 {
   letter-spacing: 0.04em;
