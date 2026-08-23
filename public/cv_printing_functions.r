@@ -109,7 +109,7 @@ create_CV_object <- function(data_location,
         no_start & has_end ~ as.character(end),
         start_end_are_same ~ as.character(end),
         has_start & no_end ~ paste("Current", "-", start),
-        TRUE ~ paste(end, "-", start)
+        TRUE ~ paste(start, "-", end)
       )
     ) |>
     dplyr::arrange(desc(parse_dates(end))) |>
@@ -153,7 +153,8 @@ sanitize_links <- function(cv, text) {
 #' @param section_id ID of the entries section to be printed as encoded by the `section` column of the `entries` table
 print_section <- function(cv, section_id, glue_template = "default") {
   if (section_id == "publications") {
-    glue_template <- "{description_bullets}\n\n\n"
+    # Strip leading "- " so citations display as plain paragraphs, not bullet list
+    glue_template <- "{description_bullets}\n\n"
   } else if (glue_template == "default") {
     glue_template <- "
 #### **{title}** <span style='float:right'>{loc}</span>
