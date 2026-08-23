@@ -133,6 +133,7 @@ sup {
 
 /* Use background of the decorator for lines instead of the border. Seems to be crisper. */
 div.decorator {
+  display: none !important;
   min-width: var(--decorator-line-width);
   border: none;
   background-color: var(--decorator-color);

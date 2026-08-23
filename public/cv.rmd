@@ -100,7 +100,7 @@ CV <- print_text_block(CV, "intro")
 ```
 
 
-Education {data-concise=true}
+Education {data-concise=true .no-timeline}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -108,7 +108,7 @@ CV <- print_section(CV, 'education')
 ```
 
 
-Professional Experience
+Professional Experience {.no-timeline}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -116,14 +116,14 @@ CV <- print_section(CV, 'professional_experience')
 ```
 
 
-Research & Survey Experience
+Research & Survey Experience {.no-timeline}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV <- print_section(CV, 'research_experience')
 ```
 
-Publications
+Publications {.no-timeline}
 --------------------------------------------------------------------------------
 
 ```{r}
