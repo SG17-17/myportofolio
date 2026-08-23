@@ -168,3 +168,34 @@ div.decorator::after {
 div.decorator::before {
   content: none;
 }
+
+
+/* Position sidebar sections across pages */
+#aside {
+  height: 850mm; /* Approx 3 A4 pages */
+}
+
+/* Page 2 Middle (~445mm down) */
+#core, #certs {
+  position: absolute;
+  top: 400mm;
+  width: calc(100% - 2 * var(--sidebar-horizontal-padding));
+}
+#certs {
+  top: 480mm;
+}
+
+/* Page 3 Middle (~742mm down) */
+#skills {
+  position: absolute;
+  top: 700mm;
+  width: calc(100% - 2 * var(--sidebar-horizontal-padding));
+}
+
+/* Page 3 Bottom (~890mm down) */
+#disclaimer {
+  position: absolute;
+  top: 830mm;
+  width: calc(100% - 2 * var(--sidebar-horizontal-padding));
+}
+
