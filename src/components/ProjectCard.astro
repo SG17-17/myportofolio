@@ -28,13 +28,10 @@ const parsedDescription = description.map(desc => marked.parse(desc));
     {photo ? (
       <div class="card-image">
         {typeof photo === 'string' ? (
-          <Image 
-            src={photo} 
+          <img 
+            src={(import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL.slice(0, -1) : import.meta.env.BASE_URL) + photo} 
             alt={title} 
-            width={600} 
-            height={300} 
             class="image" 
-            quality={80} 
           />
         ) : (
           <Image 
