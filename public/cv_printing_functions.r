@@ -105,7 +105,7 @@ create_CV_object <- function(data_location,
       has_end = !no_end,
       start_end_are_same = start == end,
       timeline = dplyr::case_when(
-        no_start & no_end ~ "N/A",
+        no_start & no_end ~ "",
         no_start & has_end ~ as.character(end),
         start_end_are_same ~ as.character(end),
         has_start & no_end ~ paste("Current", "-", start),
@@ -113,7 +113,7 @@ create_CV_object <- function(data_location,
       )
     ) |>
     dplyr::arrange(desc(parse_dates(end))) |>
-    dplyr::mutate_all(~ ifelse(is.na(.), "N/A", .))
+    dplyr::mutate_all(~ ifelse(is.na(.), "", .))
 
   cv
 }
