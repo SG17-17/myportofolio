@@ -152,7 +152,9 @@ sanitize_links <- function(cv, text) {
 #' @description Take a position data frame and the section id desired and prints the section to markdown.
 #' @param section_id ID of the entries section to be printed as encoded by the `section` column of the `entries` table
 print_section <- function(cv, section_id, glue_template = "default") {
-  if (glue_template == "default") {
+  if (section_id == "publications") {
+    glue_template <- "{description_bullets}\n\n\n"
+  } else if (glue_template == "default") {
     glue_template <- "
 #### **{title}** <span style='float:right'>{loc}</span>
 <div style='display:flex; justify-content:space-between; font-style:italic; margin-bottom: 0.5rem;'>
