@@ -44,9 +44,6 @@ if(params$pdf_mode) {
 Aside
 ================================================================================
 
-![logo](profile.jpg){width=100% style="border-radius: 50%; border: 3px solid #ccc; margin-bottom: 20px;"}
-
-
 ```{r}
 if(params$pdf_mode){
   cat("View this CV online with links at _sg17-17.github.io/myportofolio/cv.html_")
