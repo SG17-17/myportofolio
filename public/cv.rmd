@@ -123,7 +123,7 @@ Research & Survey Experience
 CV <- print_section(CV, 'research_experience')
 ```
 
-Publications {.no-timeline}
+Publications
 --------------------------------------------------------------------------------
 
 ```{r}
