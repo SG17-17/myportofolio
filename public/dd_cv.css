@@ -67,6 +67,13 @@ sup {
   margin-top: 0.25rem;
 }
 
+/* Remove the map-pin icon that pagedown adds to .place in main content.
+   The icon stays in the sidebar contact info where it belongs. */
+[data-id="main"] .place::before {
+  content: none !important;
+  display: none !important;
+}
+
 .main-block:not(.concise) .details div {
   padding-top: 0.005rem;
 }
