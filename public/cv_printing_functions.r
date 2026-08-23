@@ -155,9 +155,9 @@ print_section <- function(cv, section_id, glue_template = "default") {
   if (section_id == "publications") {
     glue_template <- "{description_bullets}\n\n"
   } else if (section_id == "research_experience") {
-    # Layout: h3=role (left), loc=right, institution=italic paragraph below
-    # N/A as ps[0] → pagedown JS skips .place, so loc goes to .location (right)
-    # institution paragraph stays in content div as italic subtitle
+    # Layout matching Professional Experience exactly
+    # N/A skips .place, loc goes to right (.location), timeline to left (.date)
+    # institution (project title) sits normally below as plain text.
     glue_template <- "
 ### {title}
 
@@ -167,7 +167,7 @@ N/A
 
 {timeline}
 
-*{institution}*
+{institution}
 
 {description_bullets}
 \n\n\n"

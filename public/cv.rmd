@@ -108,7 +108,7 @@ CV <- print_section(CV, 'education')
 ```
 
 
-Professional Experience {.no-timeline}
+Professional Experience
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -116,7 +116,7 @@ CV <- print_section(CV, 'professional_experience')
 ```
 
 
-Research & Survey Experience {.no-timeline}
+Research & Survey Experience
 --------------------------------------------------------------------------------
 
 ```{r}
