@@ -32643,29 +32643,20 @@ div.decorator::before {
 content: none;
 }
 
-#aside {
-height: 850mm; 
+.aside {
+position: static !important;
 }
-
-#core, #certs {
-position: absolute;
-top: 400mm;
-width: calc(100% - 2 * var(--sidebar-horizontal-padding));
+#core {
+break-before: page;
+margin-top: 50mm; 
 }
-#certs {
-top: 480mm;
-}
-
 #skills {
-position: absolute;
-top: 700mm;
-width: calc(100% - 2 * var(--sidebar-horizontal-padding));
+break-before: page;
+margin-top: 80mm; 
 }
-
 #disclaimer {
-position: absolute;
-top: 830mm;
-width: calc(100% - 2 * var(--sidebar-horizontal-padding));
+position: static !important;
+margin-top: 150mm; 
 }
 </style>
     

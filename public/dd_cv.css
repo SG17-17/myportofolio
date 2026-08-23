@@ -170,32 +170,25 @@ div.decorator::before {
 }
 
 
-/* Position sidebar sections across pages */
-#aside {
-  height: 850mm; /* Approx 3 A4 pages */
+
+
+/* Paginate sidebar and distribute sections */
+.aside {
+  position: static !important;
 }
 
-/* Page 2 Middle (~445mm down) */
-#core, #certs {
-  position: absolute;
-  top: 400mm;
-  width: calc(100% - 2 * var(--sidebar-horizontal-padding));
-}
-#certs {
-  top: 480mm;
+#core {
+  break-before: page;
+  margin-top: 50mm; /* Push it to the middle of the page */
 }
 
-/* Page 3 Middle (~742mm down) */
 #skills {
-  position: absolute;
-  top: 700mm;
-  width: calc(100% - 2 * var(--sidebar-horizontal-padding));
+  break-before: page;
+  margin-top: 80mm; /* Push it to the bottom-middle */
 }
 
-/* Page 3 Bottom (~890mm down) */
 #disclaimer {
-  position: absolute;
-  top: 830mm;
-  width: calc(100% - 2 * var(--sidebar-horizontal-padding));
+  position: static !important;
+  margin-top: 150mm; /* Push disclaimer to the bottom */
 }
 
