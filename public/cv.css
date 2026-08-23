@@ -1,0 +1,203 @@
+/* Custom CSS for Nick Strayer Style CV */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fc;
+  line-height: 1.5;
+}
+
+/* Base structural layout */
+#cv-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Sidebar styling */
+.aside {
+  background-color: #f0f4f8;
+  padding: 40px 30px;
+  border-right: 1px solid #e2e8f0;
+}
+
+.aside .profile-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+  border: 4px solid white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.aside h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #2d3748;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.aside p, .aside ul {
+  font-size: 0.9rem;
+  color: #4a5568;
+  margin-bottom: 10px;
+}
+
+.aside ul {
+  padding-left: 15px;
+}
+
+/* Main body styling */
+.main-content {
+  padding: 40px 50px;
+}
+
+.main-content h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #1a202c;
+  margin-top: 0;
+  margin-bottom: 5px;
+  line-height: 1.1;
+}
+
+.main-content h1 strong {
+  font-weight: 700;
+}
+
+.main-content > p.subtitle {
+  font-size: 1.25rem;
+  color: #4a5568;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.main-content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Timeline entry styling */
+.timeline-entry {
+  display: grid;
+  grid-template-columns: 1fr 140px;
+  margin-bottom: 25px;
+  align-items: baseline;
+  page-break-inside: avoid;
+}
+
+.timeline-entry .content {
+  padding-right: 20px;
+}
+
+.timeline-entry h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.timeline-entry .institution {
+  font-style: normal;
+  font-weight: 600;
+  color: #4a5568;
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+}
+
+.timeline-entry .date {
+  text-align: right;
+  color: #718096;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.timeline-entry .description {
+  grid-column: 1 / -1;
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-top: 5px;
+}
+
+/* Quarto Specific Resets */
+#quarto-content {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: none !important;
+}
+
+header#title-block-header {
+  display: none; /* Hide default quarto header */
+}
+
+/* Responsive and Print Styles */
+@media print {
+  body {
+    background: white;
+  }
+  #cv-container {
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    grid-template-columns: 220px 1fr;
+    max-width: 100%;
+  }
+  .aside {
+    background-color: #f8fafc;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .timeline-entry {
+    break-inside: avoid;
+  }
+}
+
+@media (max-width: 768px) {
+  #cv-container {
+    grid-template-columns: 1fr;
+    margin: 0;
+    border-radius: 0;
+  }
+  .aside {
+    border-right: none;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 30px 20px;
+  }
+  .main-content {
+    padding: 30px 20px;
+  }
+  .timeline-entry {
+    grid-template-columns: 1fr;
+  }
+  .timeline-entry .date {
+    text-align: left;
+    margin-bottom: 8px;
+    grid-row: 2;
+  }
+  .timeline-entry .description {
+    grid-row: 3;
+  }
+}

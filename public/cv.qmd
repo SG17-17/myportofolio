@@ -1,75 +1,169 @@
 ---
-title: "Muhammad Niam Makhali"
-subtitle: "Social & Environmental Psychology Researcher"
+title: "Muhammad Niam Makhali CV"
 format:
   html:
-    theme: cosmo
+    css: cv.css
     toc: false
     minimal: true
-    css: styles.css
-author:
-  - name: Jatinangor, West Java
-  - name: "0818-1817-0100"
-  - name: niammakhalii@gmail.com
 ---
 
+::: {#cv-container}
+
+::: {.aside}
+![](profile.jpg){.profile-img}
+
+<h2>Contact</h2>
+
+- **Location:** Jatinangor, West Java
+- **Phone:** 0818-1817-0100
+- **Email:** niammakhalii@gmail.com
+
+<h2>Core Skills</h2>
+
+- Research Design
+- Psychometrics
+- Questionnaire Development
+- Instrument Adaptation (ITC 2017)
+- Systematic Literature Review
+- Qualitative Interview
+
+<h2>Software</h2>
+
+- R Studio
+- Positron
+- Antigravity
+- Microsoft Office
+
+<h2>Certifications</h2>
+
+- BNSP Professional Certification – Human Resources Staff
+- Nature Conservation Cadre Certification – Meru Betiri National Park
+
+:::
+
+::: {.main-content}
+
+# **Muhammad Niam** Makhali
+<p class="subtitle">Social & Environmental Psychology Researcher</p>
+
 ## Profile
+
 Researcher with a master's degree in psychology from Padjadjaran University and experience in quantitative and qualitative social research. Skilled in survey methodology, psychometrics, statistical analysis, and evidence-based research across academic and field settings. Experienced in adapting and validating psychological instruments, designing research protocols, analysing complex datasets, and producing scientific reports to support research and policy development. Interested in sustainability, environmental behaviour, public policy and social development.
 
 ## Education
 
-**Master of Science in Psychology**  
-*Padjadjaran University* \hfill **2024–2026**  
-GPA: 3.51
+::: {.timeline-entry}
+::: {.content}
+### Master of Science in Psychology
+<p class="institution">Padjadjaran University</p>
+<div class="description">GPA: 3.51</div>
+:::
+<div class="date">2024–2026</div>
+:::
 
-**Bachelor of Psychology**  
-*Muria Kudus University* \hfill **2019–2023**  
-GPA: 3.60
+::: {.timeline-entry}
+::: {.content}
+### Bachelor of Psychology
+<p class="institution">Muria Kudus University</p>
+<div class="description">GPA: 3.60</div>
+:::
+<div class="date">2019–2023</div>
+:::
+
 
 ## Professional Experience
 
-**Research Assistant**  
-*Faculty of Psychology, Padjadjaran University* \hfill **2024–2026**
-
+::: {.timeline-entry}
+::: {.content}
+### Research Assistant
+<p class="institution">Faculty of Psychology, Padjadjaran University</p>
+<div class="description">
 - Assisted in grant-funded research projects from research design to reporting.
 - Adapted and validated four international psychological instruments following ITC Guidelines (2017).
 - Designed survey procedures and supported ethical clearance preparation.
 - Conducted statistical analyses using R and structural equation modelling techniques.
 - Coordinated research activities, participant recruitment, and field data collection.
 - Prepared research reports, technical documentation, and scientific manuscripts.
+</div>
+:::
+<div class="date">2024–2026</div>
+:::
 
-**Executive Coordinator**  
-*Muria Research Center* \hfill **2020–2023**
-
+::: {.timeline-entry}
+::: {.content}
+### Executive Coordinator
+<p class="institution">Muria Research Center</p>
+<div class="description">
 - Coordinated research planning, scheduling, and implementation across multiple community-based research projects.
 - Supervised field researchers throughout data collection activities.
 - Developed research protocols and field instruments.
 - Analysed research findings and prepared technical reports and scientific publications.
 - Facilitated communication among research team members and external stakeholders.
+</div>
+:::
+<div class="date">2020–2023</div>
+:::
 
-**Field Research Assistant**  
-*SurveyMETER* \hfill **2023**
-
+::: {.timeline-entry}
+::: {.content}
+### Field Research Assistant
+<p class="institution">SurveyMETER</p>
+<div class="description">
 - Conducted large-scale field surveys across culturally diverse communities in Southwest Papua.
 - Collected quantitative and qualitative data through structured interviews and field observations.
 - Maintained data quality through verification and consistency checking.
 - Collaborated with multidisciplinary research teams during field implementation.
-
-## Core Competencies
-
-- **Research Method:** Research Design, Psychometrics, Questionnaire Development, Instrument Adaptation (ITC 2017), Systematic Literature Review, Qualitative Interview.
-- **Research Areas:** Sustainability, Environmental Behaviour, Social Psychology, Community Research.
-- **Software:** R Studio, Positron, Antigravity, Microsoft Office.
-
-## Certifications
-
-- BNSP Professional Certification – Human Resources Staff
-- Nature Conservation Cadre Certification – Meru Betiri National Park
+</div>
+:::
+<div class="date">2023</div>
+:::
 
 ## Publications
 
-- **Makhali, M. N.** The Boundary Conditions of Climate Change Skepticism: How Student Engagement Moderates the Link to Environmental Activism Behavior. *[Manuscript in preparation for the Journal of Environmental Psychology]*
-- **Makhali, M. N.**, Mutmainnah, M., Tanjung., Jatnika, R., & Muliadi, R. Adaptation and Validation of the Indonesian Version of the Environmental Cynicism Scale. *Jurnal Ecopsy*, 13(1), 27-40.
-- **Makhali, M. N.**, Ninin, R. H., Abidin, Z., & Damanik, R. M. (2026). Menguji Ulang Peran Sinisme Lingkungan Terhadap Perilaku pro-Lingkungan Pada Mahasiswa di Indonesia. *Jurnal Psikologi Perseptual*, 11(1), 91-103.
-- **Makhali, M. N.**, & Widjanarko, M. (2023). Pro-environmental Behavior among Coffee Farmers in Muria Mountains Area. *Jurnal Ecopsy*, 10(1), 1-11.
-- Prastyo, E. B., Khasan, M., & **Makhali, M. N.** (2022). Disaster Mitigation Based on Local Wisdom of the Rahtawu Village Community. *Prosiding Temilnas IPS 2021*, 204–227.
+::: {.timeline-entry}
+::: {.content}
+### The Boundary Conditions of Climate Change Skepticism: How Student Engagement Moderates the Link to Environmental Activism Behavior
+<p class="institution">Makhali, M. N.</p>
+<div class="description">Manuscript in preparation for the Journal of Environmental Psychology</div>
+:::
+<div class="date"></div>
+:::
+
+::: {.timeline-entry}
+::: {.content}
+### Adaptation and Validation of the Indonesian Version of the Environmental Cynicism Scale
+<p class="institution">Makhali, M. N., Mutmainnah, M., Tanjung., Jatnika, R., & Muliadi, R.</p>
+<div class="description">Jurnal Ecopsy, 13(1), 27-40</div>
+:::
+<div class="date"></div>
+:::
+
+::: {.timeline-entry}
+::: {.content}
+### Menguji Ulang Peran Sinisme Lingkungan Terhadap Perilaku pro-Lingkungan Pada Mahasiswa di Indonesia
+<p class="institution">Makhali, M. N., Ninin, R. H., Abidin, Z., & Damanik, R. M.</p>
+<div class="description">Jurnal Psikologi Perseptual, 11(1), 91-103</div>
+:::
+<div class="date">2026</div>
+:::
+
+::: {.timeline-entry}
+::: {.content}
+### Pro-environmental Behavior among Coffee Farmers in Muria Mountains Area
+<p class="institution">Makhali, M. N., & Widjanarko, M.</p>
+<div class="description">Jurnal Ecopsy, 10(1), 1-11</div>
+:::
+<div class="date">2023</div>
+:::
+
+::: {.timeline-entry}
+::: {.content}
+### Disaster Mitigation Based on Local Wisdom of the Rahtawu Village Community
+<p class="institution">Prastyo, E. B., Khasan, M., & Makhali, M. N.</p>
+<div class="description">Prosiding Temilnas IPS 2021, 204–227</div>
+:::
+<div class="date">2022</div>
+:::
+
+:::
+:::
