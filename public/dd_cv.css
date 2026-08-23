@@ -67,10 +67,11 @@ sup {
   margin-top: 0.25rem;
 }
 
-/* Remove the map-pin icon that pagedown adds to .place in main content.
-   The icon stays in the sidebar contact info where it belongs. */
+/* Remove the map-pin icon that pagedown's JS injects into .location in main content.
+   The icon is appropriate in sidebar contact info, not next to institution/project names. */
+[data-id="main"] .location .fa,
+[data-id="main"] .location .fas,
 [data-id="main"] .place::before {
-  content: none !important;
   display: none !important;
 }
 
