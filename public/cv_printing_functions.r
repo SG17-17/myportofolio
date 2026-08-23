@@ -164,17 +164,16 @@ N/A
 {timeline}
 \n\n\n"
   } else if (section_id == "research_experience") {
-    # N/A for place and location to skip them, timeline goes to left, institution below.
+    # Put institution (project title) in ps[0] (.place) so it sits directly under the header with minimal spacing.
+    # N/A for location to skip it, timeline to left.
     glue_template <- "
 ### {title}
 
-N/A
+{institution}
 
 N/A
 
 {timeline}
-
-{institution}
 
 {description_bullets}
 \n\n\n"
