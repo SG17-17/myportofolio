@@ -44,14 +44,6 @@ if(params$pdf_mode) {
 Aside
 ================================================================================
 
-```{r}
-if(params$pdf_mode){
-  cat("View this CV online with links at _sg17-17.github.io/myportofolio/cv.html_")
-} else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](cv.pdf)")
-}
-```
-
 Contact {#contact}
 --------------------------------------------------------------------------------
 
@@ -59,11 +51,12 @@ Contact {#contact}
 CV |> print_contact_info()
 ```
 
-Language {#skills}
---------------------------------------------------------------------------------
-
 ```{r}
-CV |> print_skill_bars()
+if(params$pdf_mode){
+  cat("View this CV online with links at _sg17-17.github.io/myportofolio/cv.html_")
+} else {
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](cv.pdf)")
+}
 ```
 
 Core Competencies {#core}
@@ -80,6 +73,12 @@ Certifications {#certs}
 CV <- print_text_block(CV, 'certifications_aside')
 ```
 
+Language {#skills}
+--------------------------------------------------------------------------------
+
+```{r}
+CV |> print_skill_bars()
+```
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
