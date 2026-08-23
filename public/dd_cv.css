@@ -33,9 +33,16 @@ body {
 /* Update header text */
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--header-text-family);
   color: var(--header-text-color);
+}
+
+h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+  font-size: 1.05rem;
 }
 
 /* When in PDF export mode make sure superscripts are nice and small and italic */
@@ -133,7 +140,6 @@ sup {
 
 /* Use background of the decorator for lines instead of the border. Seems to be crisper. */
 div.decorator {
-  display: none !important;
   min-width: var(--decorator-line-width);
   border: none;
   background-color: var(--decorator-color);

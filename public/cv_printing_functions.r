@@ -154,13 +154,11 @@ sanitize_links <- function(cv, text) {
 print_section <- function(cv, section_id, glue_template = "default") {
   if (glue_template == "default") {
     glue_template <- "
-### {title}
-
-{loc}
-
-{institution}
-
-{timeline}
+#### **{title}** <span style='float:right'>{loc}</span>
+<div style='display:flex; justify-content:space-between; font-style:italic; margin-bottom: 0.5rem;'>
+  <span>{institution}</span>
+  <span>{timeline}</span>
+</div>
 
 {description_bullets}
 \n\n\n"
