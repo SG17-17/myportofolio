@@ -153,15 +153,28 @@ sanitize_links <- function(cv, text) {
 #' @param section_id ID of the entries section to be printed as encoded by the `section` column of the `entries` table
 print_section <- function(cv, section_id, glue_template = "default") {
   if (section_id == "publications") {
-    # N/A title/loc/institution so they are hidden, timeline goes to left, description below
+    # Put description_bullets in ps[0] (.place) so it stays inside the header and aligns perfectly with the timeline circle.
     glue_template <- "
 ### <span style=\"display:none\">N/A</span>
+
+{description_bullets}
+
+N/A
+
+{timeline}
+\n\n\n"
+  } else if (section_id == "research_experience") {
+    # N/A for place and location to skip them, timeline goes to left, institution below.
+    glue_template <- "
+### {title}
 
 N/A
 
 N/A
 
 {timeline}
+
+{institution}
 
 {description_bullets}
 \n\n\n"
