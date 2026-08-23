@@ -153,15 +153,16 @@ sanitize_links <- function(cv, text) {
 #' @param section_id ID of the entries section to be printed as encoded by the `section` column of the `entries` table
 print_section <- function(cv, section_id, glue_template = "default") {
   if (section_id == "publications") {
-    # Strip leading "- " so citations display as plain paragraphs, not bullet list
     glue_template <- "{description_bullets}\n\n"
   } else if (glue_template == "default") {
     glue_template <- "
-#### **{title}** <span style='float:right'>{loc}</span>
-<div style='display:flex; justify-content:space-between; font-style:italic; margin-bottom: 0.5rem;'>
-  <span>{institution}</span>
-  <span>{timeline}</span>
-</div>
+### {title}
+
+{loc}
+
+{institution}
+
+{timeline}
 
 {description_bullets}
 \n\n\n"
@@ -171,6 +172,14 @@ print_section <- function(cv, section_id, glue_template = "default") {
 
   if (length(section_data) == 0) {
     stop(glue::glue("Tried to print section {section_id} with no entries. Make sure everything is spelled correctly or remove this section."))
+  }
+
+  # For publications: strip "- " bullet prefix so citations print as plain text
+  if (section_id == "publications") {
+    section_data <- section_data |>
+      dplyr::mutate(
+        description_bullets = stringr::str_remove(description_bullets, "^- ")
+      )
   }
 
   # Take entire entries data frame and removes the links in descending order

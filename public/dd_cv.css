@@ -33,16 +33,22 @@ body {
 /* Update header text */
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: var(--header-text-family);
   color: var(--header-text-color);
 }
 
-h4 {
-  margin-top: 1rem;
-  margin-bottom: 0.2rem;
-  font-size: 1.05rem;
+/* Entry titles in main content: serif but compact */
+[data-id="main"] h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
+
+/* Section h2 headers: spaced caps */
+[data-id="main"] h2 {
+  letter-spacing: 0.04em;
 }
 
 /* When in PDF export mode make sure superscripts are nice and small and italic */
