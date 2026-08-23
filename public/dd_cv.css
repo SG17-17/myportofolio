@@ -172,23 +172,4 @@ div.decorator::before {
 
 
 
-/* Paginate sidebar and distribute sections */
-.aside {
-  position: static !important;
-}
-
-#core {
-  break-before: page;
-  margin-top: 50mm; /* Push it to the middle of the page */
-}
-
-#skills {
-  break-before: page;
-  margin-top: 80mm; /* Push it to the bottom-middle */
-}
-
-#disclaimer {
-  position: static !important;
-  margin-top: 150mm; /* Push disclaimer to the bottom */
-}
 
