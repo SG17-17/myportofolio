@@ -1,0 +1,22 @@
+dummy
+section,title,loc,institution,start,end,description_1,description_2,description_3,in_resume
+education,Master of Science in Psychology,,Universitas Padjadjaran,2024,2026,GPA 3.51,,,TRUE
+education,Bachelor of Psychology,,Universitas Muria Kudus,2019,2023,GPA 3.60,,,TRUE
+professional_experience,Research Assistant,Universitas Padjadjaran,Faculty of Psychology,2024,2026,Assisted in grant-funded research projects from research design to reporting.,Adapted and validated four international psychological instruments following ITC Guidelines (2017).,Designed survey procedures and supported ethical clearance preparation.,TRUE
+professional_experience,Executive Coordinator,,Muria Research Center,2019,2023,Coordinated research planning scheduling and implementation across multiple community-based research projects.,Supervised field researchers throughout data collection activities.,Developed research protocols and field instruments.,TRUE
+professional_experience,Field Research Assistant,,SurveyMETER,2023,2023,Conducted large-scale field surveys across culturally diverse communities in Southwest Papua.,Collected quantitative and qualitative data through structured interviews and field observations.,Maintained data quality through verification and consistency checking.,TRUE
+publications,The Boundary Conditions of Climate Change Skepticism: How Student Engagement Moderates the Link to Environmental Activism Behavior,,Makhali M. N.,N/A,N/A,Manuscript in preparation for the Journal of Environmental Psychology,,,TRUE
+publications,Adaptation and Validation of the Indonesian Version of the Environmental Cynicism Scale,,Makhali M. N. et al.,N/A,N/A,Jurnal Ecopsy 13(1) 27-40,,,TRUE
+publications,Menguji Ulang Peran Sinisme Lingkungan Terhadap Perilaku pro-Lingkungan Pada Mahasiswa di Indonesia,,Makhali M. N. et al.,2026,2026,Jurnal Psikologi Perseptual 11(1) 91-103,,,TRUE
+publications,Pro-environmental Behavior among Coffee Farmers in Muria Mountains Area,,Makhali M. N. & Widjanarko M.,2023,2023,Jurnal Ecopsy 10(1) 1-11,,,TRUE
+publications,Disaster Mitigation Based on Local Wisdom of the Rahtawu Village Community,,Prastyo E. B. et al.,2022,2022,Prosiding Temilnas IPS 2021 204–227,,,TRUE
+research_experience,Researcher,West Java,"Strengthening Environmental Care Character: The Integration of Social Media Literacy and Environmental Self-Identity in Pro-Environmental Behavior and Psychological Well-Being among Generation Z University Students in West Java",2026,2026,,,,TRUE
+research_experience,Researcher,Java,"The Role of Student Involvement in Environmental Organizations as a Moderator of the Effect of Climate Change Skepticism on Pro-Environmental Behavior",2026,2026,,,,TRUE
+research_experience,Field Research Assistant,Papua Barat Daya,"Worker and Household Enterprise Survey (WHES)",2023,2023,,,,TRUE
+research_experience,Field Research Assistant,"Kudus, Jepara & Pati","Population Data Collection of Cinemaspis muria",2022,2022,,,,TRUE
+research_experience,Field Research Assistant,Kudus,"Ecological Behavior of Hikers in the Muria Mountains",2021,2021,,,,TRUE
+research_experience,Field Research Assistant,"Jepara, Kudus & Pati","Exploring Muria Coffee",2019,2019,,,,TRUE
+research_experience,Field Research Assistant,"Kudus, Jepara & Pati","Jelajah Muria #2",2019,2019,,,,TRUE
+research_experience,Enumerator Coordinator,"Jepara, Kudus & Pati","Local Wisdom-Based Disaster Mitigation in Seven Villages of the Muria Mountain Region",2022,2022,,,,TRUE
+research_experience,Enumerator Coordinator,Jepara,"Local Wisdom-Based Disaster Mitigation in Tempur Village",2023,2023,,,,TRUE
+research_experience,Enumerator Coordinator,"Kudus, Jepara & Pati","Structure and Composition of Anuran Communities in Various Land Covers of Mount Muria",2023,2023,,,,TRUE
