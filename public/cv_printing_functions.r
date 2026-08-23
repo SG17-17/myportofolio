@@ -154,6 +154,19 @@ sanitize_links <- function(cv, text) {
 print_section <- function(cv, section_id, glue_template = "default") {
   if (section_id == "publications") {
     glue_template <- "{description_bullets}\n\n"
+  } else if (section_id == "research_experience") {
+    # For research: project title (institution) as heading, role and location as subtitle
+    glue_template <- "
+### {institution}
+
+{title}
+
+{loc}
+
+{timeline}
+
+{description_bullets}
+\n\n\n"
   } else if (glue_template == "default") {
     glue_template <- "
 ### {title}
