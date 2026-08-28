@@ -3,49 +3,51 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Saat Sinisme Menjadi Satu-satunya Respon yang Masuk Akal - Niam Makhali">
-  <main class="min-h-screen bg-[oklch(0.965_0.008_85)] dark:bg-[oklch(0.18_0.06_245)] text-slate-900 dark:text-slate-100">
+  <main class="min-h-screen bg-[oklch(0.965_0.008_85)] dark:bg-[oklch(0.18_0.06_245)] text-slate-900 dark:text-slate-100 pb-20">
     
-    <!-- Hero Image Header -->
-    <div class="w-full max-w-5xl mx-auto pt-24 px-4 sm:px-6 lg:px-8">
-      <div class="w-full aspect-[21/9] md:aspect-[2.5/1] overflow-hidden border-2 border-slate-900 dark:border-slate-100 relative">
-        <img 
-          src={(import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL.slice(0, -1) : import.meta.env.BASE_URL) + "/images/environmental_cynicism.jpg"} 
-          alt="Ilustrasi Sinisme Lingkungan" 
-          class="w-full h-full object-cover object-center filter sepia-[0.2] contrast-[1.1]"
-        />
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
-      </div>
-      <p class="text-right text-xs mt-2 text-slate-500 font-sans italic">Ilustrasi konseptual krisis ekologis dan sinisme struktural.</p>
-    </div>
-
-    <!-- Editorial Header -->
-    <header class="max-w-3xl mx-auto px-6 mt-12 text-center">
-      <div class="inline-block px-3 py-1 mb-6 border border-slate-900 dark:border-slate-100 font-sans text-xs font-bold uppercase tracking-widest">
+    <!-- Classic Editorial Header (Left Aligned) -->
+    <header class="max-w-5xl mx-auto px-6 pt-32 pb-8">
+      <div class="inline-block px-3 py-1 mb-6 border border-slate-900 dark:border-slate-100 font-sans text-xs font-bold uppercase tracking-widest text-orange-600 dark:text-orange-400 border-orange-600 dark:border-orange-400">
         Esai Opini
       </div>
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-8 leading-tight font-serif text-slate-900 dark:text-slate-100 balance-text">
+      
+      <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-6 leading-[1.1] font-serif text-slate-900 dark:text-slate-100 balance-text">
         Saat Sinisme Menjadi Satu-satunya Respon yang Masuk Akal di Tengah Kerusakan Alam
       </h1>
       
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 font-sans text-sm text-slate-600 dark:text-slate-400 border-t border-b border-slate-300 dark:border-slate-700 py-4 mt-8 mb-12">
-        <div class="flex items-center gap-2">
-          <span class="font-bold text-slate-900 dark:text-slate-100 uppercase tracking-wider">Oleh Niam Makhali</span>
+      <div class="flex flex-wrap items-center gap-4 font-sans text-sm text-slate-600 dark:text-slate-400 mt-6 pt-6 border-t-2 border-slate-900 dark:border-slate-100">
+        <div class="flex items-center gap-3">
+          <span class="font-bold text-slate-900 dark:text-slate-100 uppercase tracking-widest">Oleh Niam Makhali</span>
         </div>
-        <div class="hidden sm:block w-1.5 h-1.5 rounded-full bg-orange-600"></div>
-        <div>Membaca 5 menit</div>
+        <div class="w-1.5 h-1.5 rounded-full bg-orange-600"></div>
+        <div class="uppercase tracking-widest">Membaca 5 menit</div>
+        <div class="w-1.5 h-1.5 rounded-full bg-orange-600"></div>
+        <div class="uppercase tracking-widest">Opini</div>
       </div>
     </header>
 
-    <!-- Article Content -->
-    <article class="prose prose-lg dark:prose-invert max-w-2xl mx-auto px-6 font-serif prose-p:text-lg prose-p:leading-relaxed prose-headings:font-serif prose-a:text-orange-600 dark:prose-a:text-orange-400 prose-a:underline-offset-4 prose-a:decoration-2 hover:prose-a:text-orange-800 prose-blockquote:border-l-4 prose-blockquote:border-orange-600 prose-blockquote:bg-slate-100 dark:prose-blockquote:bg-slate-800 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:my-8 prose-blockquote:font-serif prose-blockquote:text-xl prose-blockquote:leading-relaxed prose-blockquote:italic prose-blockquote:text-slate-800 dark:prose-blockquote:text-slate-200">
+    <!-- Massive Full-Width Hero Image -->
+    <div class="w-full max-w-6xl mx-auto mb-16 relative">
+      <div class="w-full aspect-[16/9] md:aspect-[21/9] bg-slate-200 dark:bg-slate-800 overflow-hidden border-y-2 md:border-2 border-slate-900 dark:border-slate-100">
+        <img 
+          src={(import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL.slice(0, -1) : import.meta.env.BASE_URL) + "/images/environmental_cynicism.jpg"} 
+          alt="Ilustrasi Sinisme Lingkungan" 
+          class="w-full h-full object-cover object-center filter contrast-125 saturate-50"
+        />
+      </div>
+      <p class="text-right text-xs mt-3 text-slate-500 font-sans italic px-6 md:px-0">Ilustrasi konseptual krisis ekologis dan sinisme struktural.</p>
+    </div>
+
+    <!-- Centered Article Content -->
+    <article class="prose prose-lg dark:prose-invert max-w-2xl mx-auto px-6 font-serif prose-p:text-lg prose-p:leading-loose prose-headings:font-serif prose-a:text-orange-600 dark:prose-a:text-orange-400 prose-a:underline-offset-4 prose-a:decoration-2 hover:prose-a:text-orange-800 prose-blockquote:border-l-4 prose-blockquote:border-orange-600 prose-blockquote:bg-slate-100 dark:prose-blockquote:bg-slate-800/50 prose-blockquote:py-4 prose-blockquote:px-8 prose-blockquote:my-10 prose-blockquote:font-serif prose-blockquote:text-2xl prose-blockquote:leading-relaxed prose-blockquote:italic prose-blockquote:text-slate-800 dark:prose-blockquote:text-slate-200">
       
       <blockquote>
         <p>“Tidak usah takut apa itu namanya membahayakan, deforestation, namanya kelapa sawit ya pohon, ya kan?”<br/>
-        <span class="block text-right text-base font-sans font-bold mt-2 not-italic text-slate-600 dark:text-slate-400">— (Prabowo, 2024)</span></p>
+        <span class="block text-right text-base font-sans font-bold mt-4 not-italic text-slate-600 dark:text-slate-400 uppercase tracking-widest">— Prabowo (2024)</span></p>
       </blockquote>
 
       <!-- First paragraph with Drop Cap -->
-      <p class="first-letter:float-left first-letter:text-7xl first-letter:pr-3 first-letter:font-extrabold first-letter:text-orange-600 first-letter:font-serif first-letter:leading-[0.85] first-line:uppercase first-line:tracking-widest">
+      <p class="first-letter:float-left first-letter:text-[6rem] first-letter:pr-4 first-letter:font-extrabold first-letter:text-orange-600 first-letter:font-serif first-letter:leading-[0.75] first-letter:mt-2 first-line:uppercase first-line:tracking-widest">
         Pernyataan sinis prabowo subianto secara akurat merangkum perspektif yang dipegang oleh masyarakat Indonesia sebagai bangsa yang paling tidak percaya bahwa perubahan iklim disebabkan oleh manusia (<a href="https://yougov.co.uk/international/articles/23168-about-yougov-cambridge-globalism-project" target="_blank" rel="noopener noreferrer">Yougove Globalism Project</a>). Meskipun, degradasi lingkungan dan naiknya suhu permukaan air laut terus-menerus terjadi, sebagian kecil masyarakat masih meremehkan bahkan mengabaikan masalah lingkungan yang terjadi saat ini dan menganggapnya hanyalah tipuan dan konspirasi. Ironisnya, sebagian kecil masyarakat itu adalah pemerintah yang memegang kuasa atas tata kelola lingkungan.
       </p>
 
@@ -66,16 +68,16 @@ import Layout from '../layouts/Layout.astro';
       <p>Selain suka bersilat lidah, pemerintah juga gemar berkilat tanggung jawab. Ironis, ketika pemerintah yang seharusnya menjadi pelindung justru bersekongkol menjadi perusak. Rakyat kecewa, namun tak berdaya karena kerusakan ini dilindungi undang-undang. Kekonyolan kekuasaan ini kelak akan berhadapan dengan hukum alam yang tak kan pernah bisa disuap sebab bencana tidak mengenal kasta dan batas administratif. Pada akhirnya ketika hutan habis ditebang, ikan habis di tangkap, dan sungai tak lagi mengalir, maka manusia akan sadar bahwa uang tidak bisa dimakan.</p>
 
       <!-- Editorial End Mark -->
-      <div class="flex justify-center mt-12 mb-8">
-        <div class="w-16 flex justify-between">
-          <span class="w-2 h-2 rounded-full bg-slate-400"></span>
-          <span class="w-2 h-2 rounded-full bg-slate-400"></span>
-          <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+      <div class="flex justify-center mt-16 mb-12">
+        <div class="w-24 flex justify-between">
+          <span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-slate-200"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-slate-200"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-slate-800 dark:bg-slate-200"></span>
         </div>
       </div>
     </article>
     
-    <div class="pb-24 pt-8 text-center border-t border-slate-300 dark:border-slate-700 max-w-4xl mx-auto">
+    <div class="pt-8 text-center max-w-4xl mx-auto px-6">
       <a href={(import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL.slice(0, -1) : import.meta.env.BASE_URL) + '/'} class="inline-flex items-center gap-3 px-8 py-4 border-2 border-slate-900 dark:border-slate-100 text-slate-900 dark:text-slate-100 font-bold font-sans uppercase tracking-widest text-sm transition-all hover:-translate-y-1 hover:shadow-[4px_4px_0_oklch(0.32_0.12_245)] dark:hover:shadow-[4px_4px_0_oklch(0.92_0.02_85)] bg-transparent hover:bg-slate-50 dark:hover:bg-slate-900">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
         Kembali ke Beranda
