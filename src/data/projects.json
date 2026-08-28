@@ -1,5 +1,23 @@
 [
   {
+    "title": "Policy Brief: Menuju Penggunaan WiFi Kampus yang Bijak",
+    "description": [
+      "Kebijakan ini merekomendasikan pembatasan akses konten digital (seperti scrolling media sosial) yang tidak relevan dengan kehidupan akademik pada jaringan WiFi kampus, guna mendorong keberlanjutan digital dan produktivitas."
+    ],
+    "link": "/documents/Policy_Brief_WiFi_Kampus.pdf",
+    "github": "",
+    "photo": "/images/policy_wifi_kampus.jpg"
+  },
+  {
+    "title": "Policy Brief: Refleksi Kolektif Menuju Pendidikan Magister Yang Sejahtera",
+    "description": [
+      "Merumuskan tata kelola kurikulum dan sinkronisasi kalender akademik guna menekan tingginya angka gejala stres (23.8%) pada mahasiswa magister Universitas Padjadjaran, menyelaraskan standar FIBAA dengan kesejahteraan mental."
+    ],
+    "link": "/documents/Policy_Brief_Kesejahteraan_Magister.pdf",
+    "github": "",
+    "photo": "/images/policy_kesejahteraan_magister.jpg"
+  },
+  {
     "title": "Master's Thesis (M.Psi.)",
     "description": [
       "Investigated the moderating role of student engagement in environmental organizations on the link between climate change skepticism and pro-environmental behavior. Methods: Confirmatory Factor Analysis (CFA) & Linear Regression. Tools: Jamovi, R Studio."
