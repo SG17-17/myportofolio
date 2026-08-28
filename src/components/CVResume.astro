@@ -23,7 +23,7 @@ import StippledPattern from './ui/StippledPattern.astro';
         Eksplorasi mendalam mengenai dinamika psikologis masyarakat dalam merespons krisis ekologis dan kerusakan lingkungan.
       </p>
       <div class="doc-links">
-        <a href="#" class="doc-link btn-stipple-dark">Baca Artikel →</a>
+        <a href={(import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL.slice(0, -1) : import.meta.env.BASE_URL) + '/sinisme/'} class="doc-link btn-stipple-dark">Baca Artikel →</a>
       </div>
     </div>
 
