@@ -22,7 +22,7 @@
     "description": [
       "This manuscript in preparation explores the boundary conditions of climate change skepticism, specifically examining how student engagement can moderate the link to environmental activism behavior."
     ],
-    "link": "#",
+    "link": "/Boundary_Conditions_Skepticism_Postcard.pdf",
     "github": "",
     "photo": "/images/climate_skepticism.jpg"
   },
@@ -31,16 +31,16 @@
     "description": [
       "Published in Jurnal Ecopsy, this collaborative research details the process of adapting and validating the Indonesian version of the Environmental Cynicism Scale, ensuring its psychometric reliability and validity for local contexts."
     ],
-    "link": "#",
+    "link": "https://ppjp.ulm.ac.id/journal/index.php/ecopsy/article/view/24841/pdf",
     "github": "",
     "photo": "/images/environmental_cynicism.jpg"
   },
   {
-    "title": "Saat Sinisme Menjadi Satu-satunya Respon yang Masuk Akal di Tengah Kerusakan Alam",
+    "title": "Re-examining the Role of Environmental Cynicism",
     "description": [
-      "Sebuah esai opini mengenai tingkah laku sistem yang menggerus kepercayaan publik dan melahirkan sinisme lingkungan di masyarakat Indonesia."
+      "This publication in Jurnal Psikologi Perseptual re-examines the role of environmental cynicism and its direct impact on pro-environmental behavior among university students in Indonesia."
     ],
-    "link": "sinisme",
+    "link": "https://jurnal.umk.ac.id/index.php/perseptual/article/view/16584",
     "github": "",
     "photo": "/images/pro_environmental_behavior.jpg"
   },
@@ -49,8 +49,17 @@
     "description": [
       "Co-authored and published in Jurnal Ecopsy, this study investigates the psychological drivers and pro-environmental behaviors specifically within the demographic of coffee farmers in the Muria Mountains area."
     ],
-    "link": "#",
+    "link": "https://ppjp.ulm.ac.id/journal/index.php/ecopsy/article/view/2023.02.001",
     "github": "",
     "photo": "/images/coffee_farmer_muria.jpg"
+  },
+  {
+    "title": "Saat Sinisme Menjadi Satu-satunya Respon yang Masuk Akal di Tengah Kerusakan Alam",
+    "description": [
+      "Sebuah esai opini mengenai tingkah laku sistem yang menggerus kepercayaan publik dan melahirkan sinisme lingkungan di masyarakat Indonesia."
+    ],
+    "link": "sinisme",
+    "github": "",
+    "photo": "/images/environmental_cynicism.jpg"
   }
 ]
