@@ -1,13 +1,36 @@
 ---
-import Layout from '../layouts/Layout.astro';
+// Standalone page, completely bypassing Layout.astro to prevent conflicts
 ---
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saat Sinisme Menjadi Satu-satunya Respon yang Masuk Akal - Niam Makhali</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind is automatically injected by Astro -->
+</head>
+<body class="bg-[#f3f1eb] text-[#111111] font-sans m-0 p-0 antialiased selection:bg-orange-600 selection:text-white">
+  
+  <!-- Navigation Header (Multatuli Style) -->
+  <nav class="w-full border-b-2 border-[#111111] bg-[#f3f1eb] sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href={(import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL.slice(0, -1) : import.meta.env.BASE_URL) + '/'} class="font-serif font-bold text-xl tracking-tight flex items-center gap-2 hover:opacity-70 transition-opacity">
+        ← KEMBALI
+      </a>
+      <div class="font-serif font-bold text-lg uppercase tracking-widest text-center flex-1 hidden md:block">
+        Niam Makhali <span class="text-orange-600 mx-2">×</span> Esai Opini
+      </div>
+      <div class="w-24"></div> <!-- Spacer for centering -->
+    </div>
+  </nav>
 
-<Layout title="Saat Sinisme Menjadi Satu-satunya Respon yang Masuk Akal - Niam Makhali">
-  <main class="min-h-screen bg-[#f3f1eb] dark:bg-slate-900 text-[#111111] dark:text-slate-200 pb-32">
-    
+  <main class="min-h-screen pb-32">
     <!-- Centered Title -->
-    <div class="max-w-5xl mx-auto px-6 pt-32 pb-12 text-center">
-      <h1 class="text-4xl md:text-5xl lg:text-[3.5rem] font-serif font-bold leading-[1.15] tracking-tight text-[#111111] dark:text-slate-100 balance-text">
+    <div class="max-w-[1000px] mx-auto px-6 pt-16 pb-12 text-center">
+      <h1 class="text-4xl md:text-5xl lg:text-[4rem] font-serif font-bold leading-[1.1] tracking-tight text-[#111111] balance-text">
         Saat Sinisme Menjadi Satu-satunya Respon yang Masuk Akal di Tengah Kerusakan Alam
       </h1>
     </div>
@@ -16,18 +39,19 @@ import Layout from '../layouts/Layout.astro';
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-x-8">
       
       <!-- Left Column: Author and Metadata -->
-      <aside class="col-span-1 md:col-span-3 order-2 md:order-1 mt-8 md:mt-0 text-left md:text-right font-serif text-sm">
+      <aside class="col-span-1 md:col-span-3 order-2 md:order-1 mt-12 md:mt-0 text-left md:text-right font-serif text-sm">
         <div class="sticky top-32">
-          <div class="mb-4">
-            <p class="text-[#666666] dark:text-slate-400 mb-1">Oleh</p>
-            <p class="font-bold text-[#111111] dark:text-slate-100 text-base">Niam Makhali</p>
+          <div class="mb-6">
+            <p class="text-[#666666] mb-1 italic">Oleh</p>
+            <p class="font-bold text-[#111111] text-base">Niam Makhali</p>
           </div>
-          <div class="mb-4">
-            <p class="text-[#666666] dark:text-slate-400">Jumat, 28 Agustus 2026</p>
+          <div class="mb-6">
+            <p class="text-[#666666] mb-1 italic">Diterbitkan</p>
+            <p class="text-[#111111] font-bold">Jumat, 28 Agustus 2026</p>
           </div>
           <div>
-            <p class="text-[#666666] dark:text-slate-400">Kategori</p>
-            <p class="text-[#111111] dark:text-slate-200">Esai Opini</p>
+            <p class="text-[#666666] mb-1 italic">Kategori</p>
+            <p class="text-[#111111] font-bold">Esai Opini / Lingkungan</p>
           </div>
         </div>
       </aside>
@@ -36,7 +60,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="col-span-1 md:col-span-9 order-1 md:order-2">
         
         <!-- Hero Image -->
-        <div class="w-full mb-12 bg-white dark:bg-slate-800 border-2 border-[#111111] dark:border-slate-700">
+        <div class="w-full mb-12 bg-white border-2 border-[#111111]">
           <img 
             src={(import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL.slice(0, -1) : import.meta.env.BASE_URL) + "/images/sinisme_hero_image.jpg"} 
             alt="Ilustrasi Sinisme Lingkungan" 
@@ -45,48 +69,52 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <!-- Article Text -->
-        <article class="prose prose-lg dark:prose-invert max-w-3xl font-sans prose-p:text-[1.125rem] prose-p:leading-[1.8] prose-p:text-[#111111] dark:prose-p:text-slate-200 prose-headings:font-serif prose-a:text-[#111111] dark:prose-a:text-slate-100 prose-a:underline prose-a:underline-offset-4 prose-a:decoration-1 hover:prose-a:text-orange-600 prose-blockquote:border-l-2 prose-blockquote:border-[#111111] dark:prose-blockquote:border-slate-100 prose-blockquote:bg-transparent prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:my-10 prose-blockquote:font-serif prose-blockquote:text-[1.35rem] prose-blockquote:leading-relaxed prose-blockquote:italic prose-blockquote:text-[#111111] dark:prose-blockquote:text-slate-100">
+        <article class="max-w-[720px] font-sans text-[1.125rem] leading-[1.8] text-[#111111]">
           
-          <p>
-            Pernyataan sinis prabowo subianto secara akurat merangkum perspektif yang dipegang oleh masyarakat Indonesia sebagai bangsa yang paling tidak percaya bahwa perubahan iklim disebabkan oleh manusia (<a href="https://yougov.co.uk/international/articles/23168-about-yougov-cambridge-globalism-project" target="_blank" rel="noopener noreferrer">Yougove Globalism Project</a>). Meskipun, degradasi lingkungan dan naiknya suhu permukaan air laut terus-menerus terjadi, sebagian kecil masyarakat masih meremehkan bahkan mengabaikan masalah lingkungan yang terjadi saat ini dan menganggapnya hanyalah tipuan dan konspirasi. Ironisnya, sebagian kecil masyarakat itu adalah pemerintah yang memegang kuasa atas tata kelola lingkungan.
+          <p class="mb-6">
+            Pernyataan sinis prabowo subianto secara akurat merangkum perspektif yang dipegang oleh masyarakat Indonesia sebagai bangsa yang paling tidak percaya bahwa perubahan iklim disebabkan oleh manusia (<a href="https://yougov.co.uk/international/articles/23168-about-yougov-cambridge-globalism-project" target="_blank" rel="noopener noreferrer" class="underline underline-offset-4 decoration-1 hover:text-orange-600 transition-colors">Yougove Globalism Project</a>). Meskipun, degradasi lingkungan dan naiknya suhu permukaan air laut terus-menerus terjadi, sebagian kecil masyarakat masih meremehkan bahkan mengabaikan masalah lingkungan yang terjadi saat ini dan menganggapnya hanyalah tipuan dan konspirasi. Ironisnya, sebagian kecil masyarakat itu adalah pemerintah yang memegang kuasa atas tata kelola lingkungan.
           </p>
 
-          <blockquote>
-            <p>“Tidak usah takut apa itu namanya membahayakan, deforestation, namanya kelapa sawit ya pohon, ya kan?”<br/>
-            <span class="block text-right text-base font-sans font-bold mt-4 not-italic text-[#666666] dark:text-slate-400 uppercase tracking-widest">— Prabowo (2024)</span></p>
+          <blockquote class="border-l-4 border-orange-600 bg-orange-50/50 py-4 px-6 my-10 font-serif text-[1.4rem] leading-relaxed italic text-[#111111]">
+            <p class="mb-4">“Tidak usah takut apa itu namanya membahayakan, deforestation, namanya kelapa sawit ya pohon, ya kan?”</p>
+            <span class="block text-right text-[0.9rem] font-sans font-bold not-italic text-[#666666] uppercase tracking-widest">— Prabowo (2024)</span>
           </blockquote>
 
-          <p>Kerusakan alam yang akhirnya menyebabkan bencana ekologis, atau lebih tepatnya <a href="https://mojok.co/esai/bencana-alam-dibuat-negara-rakyat-yang-disuruh-jadi-munafik/" target="_blank" rel="noopener noreferrer">bencana pemerintah</a> yang akhir-akhir ini terjadi di Sumbar, Sumut dan Aceh telah mengalihkan perhatian publik dari isu ijazah palsu. Bencana banjir bandang dengan dahsyatnya air bah yang membawa ribuan gelondongan kayu menghantam dan meluluhlantakkan setiap tempat yang dilewatinya, menyebabkan lebih dari 800 jiwa meninggal dunia, ratusan orang hilang terseret arus dan ribuan orang kehilangan tempat tinggal, ini bukan karena alam sedang marah, tapi pemerintah yang banyak gaya dan bertingkah.</p>
+          <p class="mb-6">Kerusakan alam yang akhirnya menyebabkan bencana ekologis, atau lebih tepatnya <a href="https://mojok.co/esai/bencana-alam-dibuat-negara-rakyat-yang-disuruh-jadi-munafik/" target="_blank" rel="noopener noreferrer" class="underline underline-offset-4 decoration-1 hover:text-orange-600 transition-colors">bencana pemerintah</a> yang akhir-akhir ini terjadi di Sumbar, Sumut dan Aceh telah mengalihkan perhatian publik dari isu ijazah palsu. Bencana banjir bandang dengan dahsyatnya air bah yang membawa ribuan gelondongan kayu menghantam dan meluluhlantakkan setiap tempat yang dilewatinya, menyebabkan lebih dari 800 jiwa meninggal dunia, ratusan orang hilang terseret arus dan ribuan orang kehilangan tempat tinggal, ini bukan karena alam sedang marah, tapi pemerintah yang banyak gaya dan bertingkah.</p>
 
-          <p>Sulit rasanya untuk tidak menyalahkan pemerintah sebagai sistem yang harus menanggung dosa atas bencana yang terjadi hari ini. Bukan karena mereka yang menurunkan hujan, tapi mereka yang menghancurkan alam lewat kebijakan, kata-kata dan perilaku konyol mereka sehari-hari.</p>
+          <p class="mb-6">Sulit rasanya untuk tidak menyalahkan pemerintah sebagai sistem yang harus menanggung dosa atas bencana yang terjadi hari ini. Bukan karena mereka yang menurunkan hujan, tapi mereka yang menghancurkan alam lewat kebijakan, kata-kata dan perilaku konyol mereka sehari-hari.</p>
 
-          <p>Sebagai contoh, bagaimana hutan lindung disulap menjadi <em>food estate</em> dengan dalih ketahanan pangan yang justru sekarang menjadi tanah tandus. Stresnya lagi, ada pula pidato para elit yang menghina akal sehat kita, masih segar dalam ingatan ketika narasi sawit adalah pohon yang sama-sama memiliki “daun”, digaungkan oleh petinggi negara untuk membenarkan konversi hutan dan menormalkan deforestasi. Puncaknya terlihat pada perilaku mereka saat bencana terjadi, cengengesan sambil memikul beras, berpose candid dengan gaya necis berompi anti peluru, hingga cuap-cuap kepada awak media kalau kondisi baik-baik saja. <em>Shut up. Its not funny!</em></p>
+          <p class="mb-6">Sebagai contoh, bagaimana hutan lindung disulap menjadi <em class="font-serif text-lg">food estate</em> dengan dalih ketahanan pangan yang justru sekarang menjadi tanah tandus. Stresnya lagi, ada pula pidato para elit yang menghina akal sehat kita, masih segar dalam ingatan ketika narasi sawit adalah pohon yang sama-sama memiliki “daun”, digaungkan oleh petinggi negara untuk membenarkan konversi hutan dan menormalkan deforestasi. Puncaknya terlihat pada perilaku mereka saat bencana terjadi, cengengesan sambil memikul beras, berpose candid dengan gaya necis berompi anti peluru, hingga cuap-cuap kepada awak media kalau kondisi baik-baik saja. <em class="font-serif text-lg">Shut up. Its not funny!</em></p>
 
-          <p>Tingkah-tingkah <em>unpredictable</em> itu akhirnya tidak hanya berdampak terhadap kerusakan alam, namun juga berdampak terhadap kondisi psikologis masyarakat yang akhirnya terejawantahkan sebagai sikap ketidakpercayaan terhadap motif dari upaya penanganan masalah lingkungan yang dilakukan oleh pemerintah hari ini. Kondisi psikologis itu terjadi karena masyarakat menganggap upaya tersebut adalah sia-sia, tidak tulus dan manipulatif. Masyarakat mungkin percaya bahwa kerusakan alam memang terjadi, namun mereka tidak percaya pada motif pemerintah untuk menyelesaikan masalah lingkungan, kondisi ini dalam psikologi lingkungan dikenal sebagai sinisme lingkungan (<em>enviromental cynicism</em>).</p>
+          <p class="mb-6">Tingkah-tingkah <em class="font-serif text-lg">unpredictable</em> itu akhirnya tidak hanya berdampak terhadap kerusakan alam, namun juga berdampak terhadap kondisi psikologis masyarakat yang akhirnya terejawantahkan sebagai sikap ketidakpercayaan terhadap motif dari upaya penanganan masalah lingkungan yang dilakukan oleh pemerintah hari ini. Kondisi psikologis itu terjadi karena masyarakat menganggap upaya tersebut adalah sia-sia, tidak tulus dan manipulatif. Masyarakat mungkin percaya bahwa kerusakan alam memang terjadi, namun mereka tidak percaya pada motif pemerintah untuk menyelesaikan masalah lingkungan, kondisi ini dalam psikologi lingkungan dikenal sebagai sinisme lingkungan (<em class="font-serif text-lg">enviromental cynicism</em>).</p>
 
-          <p>Sinisme lingkungan lebih dari sekedar skeptisisme. Jika skeptisisme lahir dari keraguan akan fakta sains dan masih dapat untuk diyakinkan asal ada bukti, sinisme lingkungan justru lahir dari hilangnya harapan terhadap sistem. Masyarakat yang sinis tidak lagi percaya bahwa pemerintah memiliki integritas untuk memperbaikinya karena tingkah-tingkah konyol yang dilakukan selama ini dianggap sebagai kemunafikan, manipulatif dan penuh dengan motif pribadi. Kebangetannya lagi, sampai bencana terjadipun mereka masih melakukan tingkah-tingkah konyol itu.</p>
+          <p class="mb-6">Sinisme lingkungan lebih dari sekedar skeptisisme. Jika skeptisisme lahir dari keraguan akan fakta sains dan masih dapat untuk diyakinkan asal ada bukti, sinisme lingkungan justru lahir dari hilangnya harapan terhadap sistem. Masyarakat yang sinis tidak lagi percaya bahwa pemerintah memiliki integritas untuk memperbaikinya karena tingkah-tingkah konyol yang dilakukan selama ini dianggap sebagai kemunafikan, manipulatif dan penuh dengan motif pribadi. Kebangetannya lagi, sampai bencana terjadipun mereka masih melakukan tingkah-tingkah konyol itu.</p>
 
-          <p>Tingkah-tingkah konyol itu tidak hanya memuakkan publik tapi juga merambah ke kondisi psikologis masyarakat Indonesia, menggerus kepercayaan publik, melumpuhkan aksi kolektif, menyebabkan bencana dan menghadirkan derita. Negara ini sedang sakit dan harus segera diobati. Sebab, perbaikan masalah lingkungan pada dasarnya menuntut aksi kolektif masyarakat, tanpa aksi kolektif, segala janji dan kebijakan hanyalah <em>omon-omon</em> belaka. Masyarakat berharap kepada pemerintah agar mampu memimpin, mengatur dan memberi teladan, bukan justru ikut merusak alam sembari merusak akal sehat dan mencederai moral ekologis masyarakat.</p>
+          <p class="mb-6">Tingkah-tingkah konyol itu tidak hanya memuakkan publik tapi juga merambah ke kondisi psikologis masyarakat Indonesia, menggerus kepercayaan publik, melumpuhkan aksi kolektif, menyebabkan bencana dan menghadirkan derita. Negara ini sedang sakit dan harus segera diobati. Sebab, perbaikan masalah lingkungan pada dasarnya menuntut aksi kolektif masyarakat, tanpa aksi kolektif, segala janji dan kebijakan hanyalah <em class="font-serif text-lg">omon-omon</em> belaka. Masyarakat berharap kepada pemerintah agar mampu memimpin, mengatur dan memberi teladan, bukan justru ikut merusak alam sembari merusak akal sehat dan mencederai moral ekologis masyarakat.</p>
 
-          <p>Fenomena sinisme lingkungan ini merupakan akibat dari bobroknya sistem kekuasaan dalam mengelola lingkungan. Meminjam pendapat dari Prof. Gerry van Klinken dalam buku “bacaan bumi” menyebut kondisi ini sebagai <em>Ecological Imperialism</em>, dimana pemerintah dan elit ekonomi bersekongkol menggunakan narasi pembangunan untuk memperluas kontrol atas sumber daya alam. Hal ini diciptakan untuk menutup ruang bagi partisipasi publik. Dalam konsep Ulrich Beck seorang sosiolog Jeman, intitusi modern seringkali menciptakan kerusakan lingkungan tetapi secara sadar menyangkal tanggung jawab atas dampaknya.</p>
+          <p class="mb-6">Fenomena sinisme lingkungan ini merupakan akibat dari bobroknya sistem kekuasaan dalam mengelola lingkungan. Meminjam pendapat dari Prof. Gerry van Klinken dalam buku “bacaan bumi” menyebut kondisi ini sebagai <em class="font-serif text-lg">Ecological Imperialism</em>, dimana pemerintah dan elit ekonomi bersekongkol menggunakan narasi pembangunan untuk memperluas kontrol atas sumber daya alam. Hal ini diciptakan untuk menutup ruang bagi partisipasi publik. Dalam konsep Ulrich Beck seorang sosiolog Jeman, intitusi modern seringkali menciptakan kerusakan lingkungan tetapi secara sadar menyangkal tanggung jawab atas dampaknya.</p>
 
-          <p>Selain suka bersilat lidah, pemerintah juga gemar berkilat tanggung jawab. Ironis, ketika pemerintah yang seharusnya menjadi pelindung justru bersekongkol menjadi perusak. Rakyat kecewa, namun tak berdaya karena kerusakan ini dilindungi undang-undang. Kekonyolan kekuasaan ini kelak akan berhadapan dengan hukum alam yang tak kan pernah bisa disuap sebab bencana tidak mengenal kasta dan batas administratif. Pada akhirnya ketika hutan habis ditebang, ikan habis di tangkap, dan sungai tak lagi mengalir, maka manusia akan sadar bahwa uang tidak bisa dimakan.</p>
+          <p class="mb-6">Selain suka bersilat lidah, pemerintah juga gemar berkilat tanggung jawab. Ironis, ketika pemerintah yang seharusnya menjadi pelindung justru bersekongkol menjadi perusak. Rakyat kecewa, namun tak berdaya karena kerusakan ini dilindungi undang-undang. Kekonyolan kekuasaan ini kelak akan berhadapan dengan hukum alam yang tak kan pernah bisa disuap sebab bencana tidak mengenal kasta dan batas administratif. Pada akhirnya ketika hutan habis ditebang, ikan habis di tangkap, dan sungai tak lagi mengalir, maka manusia akan sadar bahwa uang tidak bisa dimakan.</p>
 
         </article>
 
       </div>
     </div>
-    
-    <div class="mt-20 pt-8 border-t border-[#111111]/20 dark:border-slate-700 max-w-7xl mx-auto px-6 text-center">
-      <a href={(import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL.slice(0, -1) : import.meta.env.BASE_URL) + '/'} class="inline-flex items-center justify-center bg-[#111111] dark:bg-slate-100 text-[#f3f1eb] dark:text-[#111111] px-8 py-4 font-sans font-bold uppercase tracking-widest text-sm hover:opacity-90 transition-opacity">
-        ← Kembali ke Beranda
-      </a>
-    </div>
   </main>
-</Layout>
+</body>
+</html>
 
 <style>
   .balance-text {
     text-wrap: balance;
+  }
+  
+  /* Apply exact fonts */
+  html, body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-serif {
+    font-family: 'Bitter', serif;
   }
 </style>
