@@ -10,12 +10,16 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 
+const baseUrl = import.meta.env.BASE_URL.endsWith('/') 
+  ? import.meta.env.BASE_URL.slice(0, -1) 
+  : import.meta.env.BASE_URL;
+
 const navItems = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#skills", label: "Skills" },
-  { href: "/myportofolio/cv.html", label: "CV/Resume" },
-  { href: "#contact", label: "Contact" },
+  { href: `${baseUrl}/#about`, label: "About" },
+  { href: `${baseUrl}/#projects`, label: "Projects" },
+  { href: `${baseUrl}/#skills`, label: "Skills" },
+  { href: `${baseUrl}/cv.html`, label: "CV/Resume" },
+  { href: `${baseUrl}/#contact`, label: "Contact" },
 ];
 
 export function Navigation() {
