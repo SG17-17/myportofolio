@@ -62,7 +62,7 @@ const parsedDescription = description.map(desc => marked.parse(desc));
       <div class="card-footer">
         {link && (
           <a 
-            href={link.startsWith('http') ? link : `${import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL.slice(0, -1) : import.meta.env.BASE_URL}/${link.replace(/^\\//, '')}`} 
+            href={link.startsWith('http') ? link : `${import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL.slice(0, -1) : import.meta.env.BASE_URL}/${link.startsWith('/') ? link.slice(1) : link}`} 
             target={link.startsWith('http') ? "_blank" : "_self"} 
             rel={link.startsWith('http') ? "noopener noreferrer" : ""} 
             class="card-link btn-stipple-dark"
