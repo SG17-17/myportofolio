@@ -61,7 +61,12 @@ const parsedDescription = description.map(desc => marked.parse(desc));
     {(link || github) && (
       <div class="card-footer">
         {link && (
-          <a href={link} target="_blank" rel="noopener noreferrer" class="card-link btn-stipple-dark">
+          <a 
+            href={link.startsWith('http') ? link : `${import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL.slice(0, -1) : import.meta.env.BASE_URL}/${link.replace(/^\\//, '')}`} 
+            target={link.startsWith('http') ? "_blank" : "_self"} 
+            rel={link.startsWith('http') ? "noopener noreferrer" : ""} 
+            class="card-link btn-stipple-dark"
+          >
             <Icon name="ri:external-link-line" size={16} />
             <span>View</span>
           </a>
