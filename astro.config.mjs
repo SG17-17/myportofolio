@@ -32,8 +32,7 @@ const csvPlugin = {
 };
 
 export default defineConfig({
-  site: 'https://SG17-17.github.io',
-  base: '/myportofolio',
+  site: 'https://niammakhali.me',
   output: 'static',
   vite: {
     plugins: [shaderPlugin, csvPlugin, tailwindcss()]
