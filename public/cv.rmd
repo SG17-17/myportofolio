@@ -55,7 +55,7 @@ CV |> print_contact_info()
 if(params$pdf_mode){
   cat("View this CV online with links at _sg17-17.github.io/myportofolio/cv.html_")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](CV_Muhammad_Niam_Makhali.pdf)")
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](CV_NIAM_MAKHALI.pdf)")
 }
 ```
 
