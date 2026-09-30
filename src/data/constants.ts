@@ -1,9 +1,10 @@
 export const SITE_CONFIG = {
   name: 'Muhammad Niam Makhali',
-  title: 'Researcher in Social & Environmental Psychology',
+  title: 'Researcher, Psychometrics & Data Analysis',
   email: 'niammakhalii@gmail.com',
   initials: 'NM',
-  description: 'I am a researcher interested in how humans perceive and respond to the world around them—particularly in the context of environment, sustainability, and social behavior.'
+  description:
+    "I'm a psychology researcher interested in how people think, behave, and relate to the world around them. My work combines psychological measurement, research, and data analysis. When I'm away from research, you'll probably find me looking for good coffee or heading outdoors."
 };
 
 
