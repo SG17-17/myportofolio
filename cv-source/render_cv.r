@@ -5,10 +5,13 @@
 # loaded and load the cached version in the .Rmd instead of re-fetching it twice
 # for the HTML and PDF rendering. This exercise is left to the reader.
 
+# Jalankan script ini dari dalam folder `cv-source/`
+# Output HTML & PDF otomatis disimpan ke folder `../public/` agar langsung dipakai website.
+
 # Knit the HTML version
 rmarkdown::render("cv.rmd",
                   params = list(pdf_mode = FALSE),
-                  output_file = "cv.html")
+                  output_file = "../public/cv.html")
 
 # Knit the PDF version to temporary html location
 tmp_html_cv_loc <- fs::file_temp(ext = ".html")
@@ -18,4 +21,4 @@ rmarkdown::render("cv.rmd",
 
 # Convert to PDF using Pagedown
 pagedown::chrome_print(input = tmp_html_cv_loc,
-                       output = "CV_Muhammad_Niam_Makhali.pdf")
+                       output = "../public/CV_NIAM_MAKHALI.pdf")
