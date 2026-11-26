@@ -1,18 +1,8 @@
 [
   {
-    "title": "ToleMetri — Psychological Instrument Adaptation Platform",
+    "title": "Fostering Pro-Environmental Behavior and Psychological Well-being Among Gen Z Students: A Data-Driven Analysis",
     "description": [
-      "Independent project · In development",
-      "Developing a platform to structure instrument adaptation workflows based on International Test Commission guidelines. Integrates translation, expert reviews, content-validity calculations, item versioning, and documentation through AI-assisted development; currently undergoing internal testing."
-    ],
-    "link": "https://tolemetri.niammakhalii.workers.dev/",
-    "github": "",
-    "photo": ""
-  },
-  {
-    "title": "Ecolit — Research Analysis and Reporting",
-    "description": [
-      "Developed R scripts and an integrated analytical workflow for a Faculty of Psychology, Universitas Padjadjaran study involving 704 participants. Automated analyses and report generation, created data visualisations, and published the outputs as a web-based research report."
+      "This data analysis project investigates the intersection of eco-literacy, pro-environmental behavior, and psychological well-being among Generation Z university students in West Java. Utilizing advanced statistical modeling, the research provides actionable insights into how environmental awareness correlates with mental health and sustainable practices."
     ],
     "link": "https://sg17-17.github.io/ecolit/",
     "github": "",
@@ -48,7 +38,7 @@
   {
     "title": "Master's Thesis (M.Psi.)",
     "description": [
-      "Investigated the moderating role of student engagement in environmental organizations on the link between climate change skepticism and pro-environmental behavior. Methods: Confirmatory Factor Analysis (CFA) & Linear Regression. Tools: Jamovi, RStudio."
+      "Investigated the moderating role of student engagement in environmental organizations on the link between climate change skepticism and pro-environmental behavior. Methods: Confirmatory Factor Analysis (CFA) & Linear Regression. Tools: Jamovi, R Studio."
     ],
     "link": "https://niammakhali-sg.github.io/mythesis/",
     "github": "",
@@ -57,7 +47,7 @@
   {
     "title": "Competency-Based HRM System Design",
     "description": [
-      "An academic coursework project applying job analysis, behavioural event interviews, BARS, KPIs, and the ADDIE model to design a competency-based HRM system for barista roles."
+      "Audited and redesigned a comprehensive competency-based HRM system for Barista positions to align specialty quality strategies with retail efficiency. Methods: Job Analysis, BEI STAR, BARS, KPI, and ADDIE Model for training curriculums."
     ],
     "link": "/documents/Psychology_Of_Human_Resource_Management.pdf",
     "github": "",

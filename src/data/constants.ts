@@ -1,7 +1,16 @@
 export const SITE_CONFIG = {
   name: 'Muhammad Niam Makhali',
-  title: "Psychology | Psychometrics & Digital Innovation",
+  title: 'Researcher, Psychometrics & Data Analysis',
   email: 'niammakhalii@gmail.com',
   initials: 'NM',
-  description: "I approach problems through the lens of psychology, with a curiosity for what technology can make possible. My work has taken me from developing psychological assessments and conducting research to building digital systems and introducing AI into existing workflows. I enjoy turning complex problems into practical solutions, learning across disciplines, and finding ways to make knowledge more useful and enjoyable beyond its original context."
+  description:
+    "I'm a psychology researcher interested in how people think, behave, and relate to the world around them. My work combines psychological measurement, research, and data analysis. When I'm away from research, you'll probably find me looking for good coffee or heading outdoors."
 };
+
+
+export const SKILLS = [
+  'Research Design', 'Psychometrics', 'Questionnaire Development', 
+  'Instrument Adaptation', 'Systematic Literature Review', 'Qualitative Interview',
+  'Sustainability', 'Environmental Behaviour', 'Social Psychology', 'Community Research',
+  'R Studio', 'Positron', 'Antigravity', 'Microsoft Office'
+];

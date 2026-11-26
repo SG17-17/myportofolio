@@ -15,7 +15,7 @@ const hasMoreProjects = PROJECTS.length > INITIAL_PROJECT_COUNT;
 
 <Section id="projects" class="py-24" containerClass="max-w-6xl">
   <SectionTitle>Projects</SectionTitle>
-  <div id="project-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     {PROJECTS.map((project, index) => (
       <div class={`project-wrapper h-full ${index >= INITIAL_PROJECT_COUNT ? 'hidden-project' : ''}`}>
         <ProjectCard {...project} />
@@ -26,8 +26,6 @@ const hasMoreProjects = PROJECTS.length > INITIAL_PROJECT_COUNT;
     <div class="flex justify-center mt-12">
       <button 
         id="show-more-projects"
-        aria-expanded="false"
-        aria-controls="project-list"
         class="show-more-btn btn-stipple-light"
       >
         Show More Projects
@@ -48,7 +46,6 @@ const hasMoreProjects = PROJECTS.length > INITIAL_PROJECT_COUNT;
         project.classList.toggle('show');
       });
       showMoreButton.textContent = isExpanded ? 'Show Fewer Projects' : 'Show More Projects';
-      showMoreButton.setAttribute('aria-expanded', String(Boolean(isExpanded)));
     });
   }
 </script>
