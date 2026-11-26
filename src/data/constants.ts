@@ -1,6 +1,6 @@
 export const SITE_CONFIG = {
   name: 'Muhammad Niam Makhali',
-  title: 'Psychology | Psychometrics & Digital Innovation',
+  title: 'Psychology, Psychometrics & Digital Innovation',
   email: 'niammakhalii@gmail.com',
   initials: 'NM',
   description:
