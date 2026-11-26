@@ -1,5 +1,35 @@
 [
   {
+    "title": "CSR Education Assistance Evaluation — PT Gading Gadjah Mada",
+    "description": [
+      "Project through MRC Indonesia · October–November 2026",
+      "Built and implemented a web-based survey application with AI assistance, supported enumerators, and analysed data for 215 education assistance beneficiaries across 34 villages. Prepared reports and presented findings with the team to CSR representatives and company leadership."
+    ],
+    "link": "",
+    "github": "",
+    "photo": ""
+  },
+  {
+    "title": "Cognitive Assessment Development — Dinas Psikologi TNI Angkatan Darat",
+    "description": [
+      "October–November 2026",
+      "Developed blueprints and approximately 1,800 items across six cognitive subtests using AI-assisted Automatic Item Generation. Reviewed item quality, co-authored a methodological module, and delivered a workshop on the theoretical foundations and practical development of cognitive items using AI."
+    ],
+    "link": "",
+    "github": "",
+    "photo": ""
+  },
+  {
+    "title": "ToleMetri — Psychological Instrument Adaptation Platform",
+    "description": [
+      "Independent project · In development",
+      "Developing an early-stage platform for instrument adaptation workflows based on International Test Commission guidelines. Implemented translation workflows, expert reviews, content-validity calculations, item versioning, and documentation through AI-assisted development; currently undergoing internal testing."
+    ],
+    "link": "https://tolemetri.niammakhalii.workers.dev/",
+    "github": "",
+    "photo": ""
+  },
+  {
     "title": "Fostering Pro-Environmental Behavior and Psychological Well-being Among Gen Z Students: A Data-Driven Analysis",
     "description": [
       "This data analysis project investigates the intersection of eco-literacy, pro-environmental behavior, and psychological well-being among Generation Z university students in West Java. Utilizing advanced statistical modeling, the research provides actionable insights into how environmental awareness correlates with mental health and sustainable practices."
