@@ -7,7 +7,7 @@
     ],
     "link": "",
     "github": "",
-    "photo": ""
+    "photo": "/images/ggm-survey.png"
   },
   {
     "title": "Cognitive Assessment Development — Dinas Psikologi TNI Angkatan Darat",
@@ -17,7 +17,8 @@
     ],
     "link": "",
     "github": "",
-    "photo": ""
+    "photo": "/images/dispsiad-aig.png",
+    "photoFit": "contain"
   },
   {
     "title": "ToleMetri — Psychological Instrument Adaptation Platform",
@@ -27,7 +28,7 @@
     ],
     "link": "https://tolemetri.niammakhalii.workers.dev/",
     "github": "",
-    "photo": ""
+    "photo": "/images/tolemetri.png"
   },
   {
     "title": "Fostering Pro-Environmental Behavior and Psychological Well-being Among Gen Z Students: A Data-Driven Analysis",

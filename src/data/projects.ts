@@ -5,6 +5,7 @@ export interface Project {
   title: string;
   link: string;
   photo: string | ImageMetadata;  // Updated to support both string and ImageMetadata
+  photoFit?: 'cover' | 'contain';
   github: string;
   description: string[];
 }

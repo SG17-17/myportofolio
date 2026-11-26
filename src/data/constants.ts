@@ -1,10 +1,10 @@
 export const SITE_CONFIG = {
   name: 'Muhammad Niam Makhali',
-  title: 'Researcher, Psychometrics & Data Analysis',
+  title: 'Psychology | Psychometrics & Digital Innovation',
   email: 'niammakhalii@gmail.com',
   initials: 'NM',
   description:
-    "I'm a psychology researcher interested in how people think, behave, and relate to the world around them. My work combines psychological measurement, research, and data analysis. When I'm away from research, you'll probably find me looking for good coffee or heading outdoors."
+    "I work at the intersection of psychology and technology, combining research, psychological measurement, and digital development to explore new possibilities."
 };
 
 

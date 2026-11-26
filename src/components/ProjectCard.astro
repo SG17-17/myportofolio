@@ -13,7 +13,7 @@ import StippledPattern from './ui/StippledPattern.astro';
 
 type Props = Project;
 
-const { title, link, photo, github, description } = Astro.props;
+const { title, link, photo, github, description, photoFit = 'cover' } = Astro.props;
 const parsedDescription = description.map(desc => marked.parse(desc));
 ---
 
@@ -32,6 +32,7 @@ const parsedDescription = description.map(desc => marked.parse(desc));
             src={(import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL.slice(0, -1) : import.meta.env.BASE_URL) + photo} 
             alt={title} 
             class="image" 
+            style={`object-fit: ${photoFit};`}
           />
         ) : (
           <Image 
