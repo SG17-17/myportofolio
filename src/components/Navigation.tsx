@@ -16,9 +16,10 @@ const baseUrl = import.meta.env.BASE_URL.endsWith('/')
 
 const navItems = [
   { href: `${baseUrl}/#about`, label: "About" },
+  { href: `${baseUrl}/#experience`, label: "Experience" },
   { href: `${baseUrl}/#projects`, label: "Projects" },
   { href: `${baseUrl}/#skills`, label: "Skills" },
-  { href: `${baseUrl}/cv.html`, label: "CV/Resume" },
+  { href: `${baseUrl}/cv/`, label: "CV/Resume" },
   { href: `${baseUrl}/#contact`, label: "Contact" },
 ];
 

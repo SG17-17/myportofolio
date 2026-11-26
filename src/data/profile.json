@@ -1,0 +1,122 @@
+{
+  "summary": "I approach problems through the lens of psychology, with a curiosity for what technology can make possible. My work has taken me from developing psychological assessments and conducting research to building digital systems and introducing AI into existing workflows. I enjoy turning complex problems into practical solutions, learning across disciplines, and finding ways to make knowledge more useful and enjoyable beyond its original context.",
+  "experience": [
+    {
+      "title": "MRC Indonesia",
+      "context": [
+        "Project: Digital Survey Development and CSR Education Assistance Evaluation",
+        "Client: PT Gading Gadjah Mada | October–November 2026"
+      ],
+      "period": "October–November 2026",
+      "bullets": [
+        "Built and implemented a web-based survey application with AI assistance to support the evaluation of beneficiaries under the company's CSR education assistance programme, integrating questionnaire responses, housing photographs, data review, and Google Sheets.",
+        "Guided enumerators in using the application, resolved field-user issues, and revised the system throughout implementation.",
+        "Checked and analysed data for 215 education assistance beneficiaries across 34 villages, from 222 initial targets; applied documented eligibility criteria to produce scores and review notes.",
+        "Prepared evaluation reports and presented findings with the team to CSR representatives and company leadership to inform eligibility decisions and assistance priorities for the 2026–2027 programme.",
+        "Adapted the application for a second survey, retaining the instrument and preparing new target records for collection."
+      ],
+      "evidence": null
+    },
+    {
+      "title": "Dinas Psikologi TNI Angkatan Darat",
+      "context": [
+        "Cognitive Assessment Development Project | October–November 2026"
+      ],
+      "period": "October–November 2026",
+      "bullets": [
+        "Developed blueprints, item specifications, and approximately 1,800 items across six cognitive subtests using AI-assisted Automatic Item Generation (AIG).",
+        "Reviewed and revised solution rules, answer keys, distractors, and visual presentation; coordinated requirements and review with the assigned Army officer.",
+        "Documented the development process and co-authored a module explaining AIG concepts, procedures, and item review.",
+        "Delivered a workshop for personnel at Dinas Psikologi TNI Angkatan Darat on the theoretical foundations and practical development of cognitive items using AI."
+      ],
+      "evidence": null
+    },
+    {
+      "title": "Research Assistant — Universitas Padjadjaran",
+      "context": [
+        "Faculty of Psychology | April–November 2026"
+      ],
+      "period": "April–November 2026",
+      "bullets": [
+        "Supported research design, survey procedures, recruitment, field data collection, and preparation of ethics review materials.",
+        "Worked on the adaptation and measurement evaluation of four psychological instruments; conducted statistical analyses using R and structural equation modelling.",
+        "Prepared analytical reports, technical documentation, and manuscripts to communicate methods and findings.",
+        "Independently developed R scripts and an integrated analytical workflow for the Ecolit study involving 704 participants.",
+        "Automated analysis and report generation, created data visualisations, and published analytical outputs through a web-based research report."
+      ],
+      "evidence": {
+        "label": "Ecolit",
+        "url": "https://sg17-17.github.io/ecolit/"
+      }
+    },
+    {
+      "title": "Executive Coordinator — Muria Research Center",
+      "context": [
+        "2019–2023"
+      ],
+      "period": "2019–2023",
+      "bullets": [
+        "Coordinated around 15 team members and made decisions on organisational activities, research schedules, and field implementation.",
+        "Coordinated research projects directly with environmental agencies (DLH), NGOs, and the Natural Resources Conservation Agency (BKSDA).",
+        "Supervised field researchers, developed research protocols and instruments, and contributed to data analysis, reports, and scientific publications."
+      ],
+      "evidence": null
+    },
+    {
+      "title": "Field Research Assistant — SurveyMETER",
+      "context": [
+        "Worker and Household Enterprise Survey, Southwest Papua | 2023"
+      ],
+      "period": "2023",
+      "bullets": [
+        "Conducted structured interviews and field observations, checking the completeness and consistency of quantitative and qualitative survey data."
+      ],
+      "evidence": null
+    }
+  ],
+  "skills": [
+    {
+      "label": "Psychology & Psychometrics",
+      "text": "Psychological measurement, instrument development and adaptation, Automatic Item Generation, CFA, SEM."
+    },
+    {
+      "label": "Digital Innovation & Process Improvement",
+      "text": "Digital workflow design, system implementation, iterative improvement, user support."
+    },
+    {
+      "label": "AI-Assisted Development",
+      "text": "AI-assisted coding, item generation, output review, and methodological documentation."
+    },
+    {
+      "label": "Data Analytics & Research Methods",
+      "text": "Research design, questionnaire development, interviews, regression, statistical modelling, data quality checks, visualisation, and analytical reporting."
+    },
+    {
+      "label": "Project Coordination & Stakeholder Engagement",
+      "text": "Team coordination, field supervision, organisational decision-making, stakeholder communication, workshop delivery."
+    },
+    {
+      "label": "Technical Tools",
+      "text": "RStudio, Positron, Codex, Antigravity IDE, Google Sheets, Microsoft Office."
+    }
+  ],
+  "independentProject": {
+    "title": "ToleMetri — Psychological Instrument Adaptation Platform",
+    "context": "November 2026–Present | Independent Project | In Development",
+    "url": "https://tolemetri.niammakhalii.workers.dev/",
+    "bullets": [
+      "Developing an early-stage digital platform to structure psychological instrument adaptation workflows based on International Test Commission guidelines.",
+      "Implemented translation workflows, expert reviews, content-validity calculations, item versioning, and process documentation through AI-assisted development; currently undergoing internal testing."
+    ]
+  },
+  "education": [
+    "Master’s Degree in Psychology (M.Psi.)",
+    "Universitas Padjadjaran | 2024–2026",
+    "GPA: 3.51",
+    "Selected coursework: Artificial Intelligence and Human–Computer Interaction; Psychology of HRM; Psychometrics.",
+    "Bachelor’s Degree in Psychology (S.Psi.)",
+    "Universitas Muria Kudus | 2019–2023",
+    "GPA: 3.60"
+  ],
+  "languages": "Indonesian (native); English."
+}

@@ -15,7 +15,7 @@ Portofolio/
 ├── public/                 # Aset statis yang langsung dipublikasikan ke website
 │   ├── images/             # Gambar thumbnail proyek & hero artikel
 │   ├── documents/          # Semua file PDF proyek & policy brief
-│   ├── cv.html             # Halaman CV online (/cv.html)
+│   ├── cv.html             # Pengalihan tautan CV lama ke /cv/
 │   ├── CV_NIAM_MAKHALI.pdf # File PDF CV yang bisa diunduh
 │   ├── profile.jpg         # Foto profil di navbar
 │   ├── favicon.svg         # Ikon tab browser
@@ -30,12 +30,15 @@ Portofolio/
 
 ## Panduan Cepat Edit Konten
 
-- **Ubah nama, bio, email, atau daftar skills:** edit `src/data/constants.ts`.
+- **Ubah nama, headline, atau email:** edit `src/data/constants.ts`.
+- **Ubah summary, pengalaman, pendidikan, atau skills:** edit `src/data/profile.json`, yang dipakai bersama oleh homepage dan halaman CV.
 - **Tambah/edit proyek atau publikasi:** edit `src/data/projects.json`.
   - Simpan gambar thumbnail di `public/images/` (referensikan sebagai `/images/nama-file.jpg`).
   - Simpan file PDF di `public/documents/` (referensikan sebagai `/documents/nama-file.pdf`).
 - **Tambah/edit artikel ("The Boring Stuff"):** edit halaman di `src/pages/` (`buruh.astro`, `madrasah.astro`, `sinisme.astro`) dan daftar kartunya di `src/components/CVResume.astro`.
-- **Update CV:** edit file CSV di `cv-source/cv_data/`, lalu jalankan `cv-source/render_cv.r` dari dalam folder `cv-source/` untuk memperbarui `public/cv.html` dan `public/CV_NIAM_MAKHALI.pdf`.
+- **Update CV online:** edit `src/data/profile.json`; layout berada di `src/pages/cv.astro` dan tersedia di `/cv/`. Tautan lama `/cv.html` tetap diarahkan ke halaman ini.
+- **Update CV unduhan:** ganti `public/CV_NIAM_MAKHALI.pdf` dengan PDF yang telah disetujui. Nama unduhan bagi pengunjung adalah `Muhammad_Niam_Makhali_CV.pdf`.
+- Folder `cv-source/` menyimpan generator CV terdahulu. Jangan menjalankan generator lama untuk pembaruan halaman CV saat ini karena akan menimpa pengalihan dan PDF terbaru.
 
 ## Perintah Pengembangan
 
