@@ -1,30 +1,182 @@
 ---
 /**
  * Skills Section Component
- * 
- * Simple, elegant skill tags in a flowing layout with stippled hover effect.
+ *
+ * Categorized competency cards + Tools & Technologies tags,
+ * styled to match the print-inspired editorial aesthetic of the site.
  */
-import { SKILLS } from '../data/constants';
+import { SKILL_CATEGORIES, TOOLS } from '../data/constants';
 import Section from './Section.astro';
 import SectionTitle from './SectionTitle.astro';
+import StippledPattern from './ui/StippledPattern.astro';
 ---
 
 <Section id="skills">
   <SectionTitle>Skills</SectionTitle>
-  <div class="flex flex-wrap gap-3 justify-center">
-    {SKILLS.map((skill) => (
-      <span class="skill-tag btn-stipple-dark">{skill}</span>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {SKILL_CATEGORIES.map((category) => (
+      <article class="skill-card">
+        <div class="stippled-shadow" aria-hidden="true">
+          <StippledPattern density={0.7} dotSize={2.2} width="100%" height="100%" />
+        </div>
+
+        <div class="skill-card-inner">
+          <div class="skill-icon" aria-hidden="true">
+            {category.icon === 'brain' && (
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" />
+                <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z" />
+                <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4" />
+                <path d="M12 18v-5" />
+              </svg>
+            )}
+            {category.icon === 'analytics' && (
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+                <path d="m19 9-5 5-4-4-3 3" />
+              </svg>
+            )}
+            {category.icon === 'research' && (
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2" />
+                <path d="M8.5 2h7" />
+                <path d="M7 16h10" />
+              </svg>
+            )}
+            {category.icon === 'code' && (
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m18 16 4-4-4-4" />
+                <path d="m6 8-4 4 4 4" />
+                <path d="m14.5 4-5 16" />
+              </svg>
+            )}
+            {category.icon === 'ai' && (
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+                <path d="M20 3v4" />
+                <path d="M22 5h-4" />
+              </svg>
+            )}
+            {category.icon === 'people' && (
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            )}
+          </div>
+
+          <h3 class="skill-card-title">{category.title}</h3>
+
+          <ul class="skill-list">
+            {category.items.map((item) => (
+              <li class="skill-list-item">{item}</li>
+            ))}
+          </ul>
+        </div>
+      </article>
     ))}
+  </div>
+
+  <div class="tools-block">
+    <h3 class="tools-title">Tools &amp; Technologies</h3>
+    <div class="flex flex-wrap gap-3">
+      {TOOLS.map((tool) => (
+        <span class="tool-tag btn-stipple-dark">{tool}</span>
+      ))}
+    </div>
   </div>
 </Section>
 
 <style>
-  .skill-tag {
+  .skill-card {
+    position: relative;
+    height: 100%;
+  }
+
+  .stippled-shadow {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: -6px;
+    bottom: -6px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 0;
+  }
+
+  .skill-card:hover .stippled-shadow {
+    opacity: 0.55;
+  }
+
+  .skill-card-inner {
+    height: 100%;
+    padding: 1.5rem;
+    background: var(--card);
+    border: 2px solid var(--foreground);
+    position: relative;
+    z-index: 1;
+    transition: transform 0.2s ease;
+  }
+
+  .skill-card:hover .skill-card-inner {
+    transform: translate(-2px, -2px);
+  }
+
+  .skill-icon {
+    color: var(--foreground);
+    margin-bottom: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skill-card-title {
+    font-family: 'Bitter', Georgia, serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 0.9rem;
+    line-height: 1.3;
+  }
+
+  .skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .skill-list-item {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--muted-foreground);
+  }
+
+  .tools-block {
+    margin-top: 2.75rem;
+  }
+
+  .tools-title {
+    font-family: 'Bitter', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+
+  .tool-tag {
     display: inline-block;
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
     font-weight: 500;
     color: var(--foreground);
+    background: var(--card);
     border: 1.5px solid var(--foreground);
     position: relative;
     overflow: hidden;
